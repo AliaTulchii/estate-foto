@@ -1,0 +1,25 @@
+.hero{
+    height: 884px;
+    margin: 0 0 96px 0;
+    background-color: transparent;
+    
+}
+
+
+.hero__content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 884px;
+    border-radius: 15px;
+
+    background-image: url('../../img/hero/home.jpg');
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    @include mediaBg{
+    background-image: url('../../img/hero/home@2x.jpg');
+    }
+}
