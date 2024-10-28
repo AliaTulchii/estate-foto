@@ -1,4 +1,5 @@
 const gulp = require('gulp');
+const fileInclude = require('gulp-file-include');
 
 // Tasks
 require('./gulp/dev.js');
@@ -23,3 +24,12 @@ gulp.task(
 		gulp.parallel('server:docs')
 	)
 );
+
+gulp.task('html', function() {
+    return gulp.src(['src/*.html'])
+        .pipe(fileInclude({
+            prefix: '@@',
+            basepath: '@file'
+        }))
+        .pipe(gulp.dest('dist'));
+});

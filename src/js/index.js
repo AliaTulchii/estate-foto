@@ -9,3 +9,8 @@ Fancybox.bind('[data-fancybox]', {
 // Мобильная навигация
 import mobileNav from './modules/mobile-nav.js';
 mobileNav();
+
+
+
+import scroll from './modules/scroll.js';
+scroll();

@@ -9,24 +9,39 @@
 	color: var(--title-color);
 }
 
-.title-2 {
-	margin: 1em 0 0.5em;
-	font-size: 32px;
+.services__title{
+	margin: 0 auto 85px;
+	width: 1162px;
+	font-size: 48px;
 	font-weight: 700;
 	font-family: var(--font-titles);
-	
+	line-height: 1.17;
+	color: var(--title-color);
 }
 
-.title-3 {
-	margin: 1em 0 0.5em;
+.services__subtitle {
+	margin: 0 0 16px 0;
+	// word-wrap: break-word; 
 	font-size: 26px;
 	font-weight: 700;
 	font-family: var(--font-titles);
+	line-height: 1.31;
+	color: var(--title-color);
 }
 
-.title-4 {
-	margin: 1em 0 0.5em;
-	font-size: 18px;
+.relise__title, .opinions__title {
+	margin: 0 0 90px 0;
+	font-size: 72px;
 	font-weight: 700;
 	font-family: var(--font-titles);
+	line-height: 1.11;
+	text-transform: uppercase;
+}
+
+.card__title{
+	font-family: var(--font-titles);
+	font-weight: 700;
+	font-size: 20px;
+	line-height: 1.25;
+	color: var(--text-color);
 }
