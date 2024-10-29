@@ -9,8 +9,19 @@
 }
 
 
-.relise__list--mini{
-    width: 97px;
+.relise__list--mini {
+    
+    position: relative;
+    top: 0;
+    z-index: 10;
+}
+
+.relise__img-mini--active {
+    border: 4px solid var(--accent); /* Стиль активної мініатюри */
+    opacity: 1;
+    z-index: 10; /* Піднімає активну мініатюру над іншими */
+    transform: scale(1.1); /* Збільшує розмір активної мініатюри */
+    transition: transform 0.3s, z-index 0.3s;
 }
 
 .relise__item{
@@ -21,14 +32,18 @@
 
 .relise__gallery{
     display: flex;
-
+    margin-top: 80px;
 }
 
 .relise__img{
+    position: relative;
     width: 1000px;
-    margin-bottom: 22px;
+    margin-top: -50px;
+    margin-bottom: -40px;
     border-radius: 20px;
-    
+    display: block;
+    transform: translate3d(0, 0, 0); /* оптимізація для GPU-анімації */
+    will-change: transform; /* оптимізація для анімацій */
 
     &--left{
         margin-right: auto;
@@ -41,7 +56,7 @@
     }
 
     &--right{
-        margin-right: 0;
+        margin-right: 10px;
         margin-left: auto;
     }
 
@@ -50,7 +65,7 @@
 
 .relise__img-mini{
     width: 77px;
-    margin-bottom: -1px;
+    margin-bottom: -4px;
     border-radius: 8px;
     
 

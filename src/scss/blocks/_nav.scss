@@ -1,5 +1,4 @@
-.header__nav {
-}
+
 .nav {
 	font-family: var(--font-main);
 	font-size: 16px;
@@ -12,16 +11,25 @@
 .nav__list {
 	padding: 10px 20px;
 	display: flex;
-	column-gap: 24px;
+	// column-gap: 24px;
+	justify-content:space-around;
+	align-items: center;
 	border: solid 1px var(--border-color);
 	border-radius: 20px;
 
-	
+	&--left{
+		width: 465px;
+	}
+
+	&--right{
+		width: 370px;
+	}
 }
 
 .nav__item:hover,
 .nav__item:focus{
 	font-weight: 600;
+	transition: font-weight 200ms ease-in-out;
 }
 
 .nav__item--tel{

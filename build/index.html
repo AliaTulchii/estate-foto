@@ -16,17 +16,17 @@
 			<div class="container">
 				<div class="header__row">
 					<nav class="header__nav nav">
-						<ul class="nav__list">
-							<li><a href="#uslugi" class="nav__item">Usługi</a></li>
-							<li><a href="#realizacje" class="nav__item">Ostatnie Realizacje</a></li>
-							<li><a href="#referencje" class="nav__item">Referencje</a></li>
+						<ul class="nav__list nav__list--left">
+							<li><a href="#services" class="nav__item">Usługi</a></li>
+							<li><a href="#relise" class="nav__item ">Ostatnie Realizacje</a></li>
+							<li><a href="#opinions" class="nav__item">Referencje</a></li>
 						</ul>
 
 						<div>
 							<img src="./img/favicons/logo.svg" alt="logo" />
 						</div>
 
-						<ul class="nav__list">
+						<ul class="nav__list nav__list--right">
 							<li><a href="#cennik" class="nav__item">Cennik</a></li>
 							<li><a href="#kontakt" class="nav__item">Kontakt</a></li>
 							<li><a href="tel:+48664502750" class="nav__item--tel">+48 664 502 750</a></li>
@@ -47,7 +47,7 @@
 
 		<main class="main">
 			<section class="hero">
-				<div class="container">
+				<div class="container ">
 					<div class="hero__content">
 						<h1 class="hero__title">
 							PROFESJONALNA FOTOGRAFIA NIERUCHOMOŚCI
@@ -66,9 +66,11 @@
 							</span>
 						</div>
 					</div>
+					<div class="mask-container"></div>
+					<!-- <object type="image/svg+xml" data="../../img/svgicons/blobs.svg" style="display:none;"></object> -->
 				</div>
 			</section>
-			<section class="services">
+			<section class="services" id="services">
 				<div class="container services__container">
 					<picture>
 						<source srcset="./img/services/cornersup.webp 1x, ./img/services/cornersup@2x.webp 2x" type="image/webp" />
@@ -84,7 +86,8 @@
 						<li class="services__item">
 							<div class="services__item--content">
 								<h3 class="services__subtitle">
-									Pierwsze wrażenie można zrobić tylko raz
+									Pierwsze wrażenie można zrobić <br />
+									tylko raz
 								</h3>
 								<p class="services__text">
 									Wysokiej jakości zdjęcia wnętrz to&#160;podstawa skutecznej sprzedaży lub wynajmu nieruchomości. Uchwycimy najważniejsze detale, a&#160;także
@@ -116,7 +119,8 @@
 						<li class="services__item">
 							<div class="services__item--content">
 								<h3 class="services__subtitle">
-									Skr&#243;cenie czasu sprzedaży lub wynajmu
+									Skr&#243;cenie czasu sprzedaży lub <br />
+									wynajmu
 								</h3>
 								<p class="services__text">
 									Badania pokazują, że nieruchomości prezentowane z&#160;wykorzystaniem profesjonalnej fotografii sprzedają się szybciej i&#160;w&#160;wyższych
@@ -139,7 +143,7 @@
 					</picture>
 				</div>
 			</section>
-			<section class="relise">
+			<section class="relise" id="relise">
 				<div class="container relise__container">
 					<h2 class="relise__title">
 						Ostatnie realizacje
@@ -150,119 +154,128 @@
 								<picture>
 									<source srcset="./img/realizacje/room1.webp 1x, ./img/realizacje/room1@2x.webp 2x" type="image/webp" />
 									<source srcset="./img/realizacje/room1.jpg 1x, ./img/realizacje/room1@2x.jpg 2x" type="image/jpeg" />
-									<img class="relise__img relise__img--left" src="./img/realizacje/room1.jpg" alt="room" />
+									<img id="room1" class="relise__img relise__img--left" src="./img/realizacje/room1.jpg" alt="room" />
 								</picture>
 								<picture>
 									<source srcset="./img/realizacje/room2.webp 1x, ./img/realizacje/room2@2x.webp 2x" type="image/webp" />
 									<source srcset="./img/realizacje/room2.jpg 1x, ./img/realizacje/room2@2x.jpg 2x" type="image/jpeg" />
-									<img class="relise__img relise__img--center" src="./img/realizacje/room2.jpg" alt="room" />
+									<img id="room2" class="relise__img relise__img--center" src="./img/realizacje/room2.jpg" alt="room" />
 								</picture>
 								<picture>
 									<source srcset="./img/realizacje/room3.webp 1x, ./img/realizacje/room3@2x.webp 2x" type="image/webp" />
 									<source srcset="./img/realizacje/room3.jpg 1x, ./img/realizacje/room3@2x.jpg 2x" type="image/jpeg" />
-									<img class="relise__img relise__img--right" src="./img/realizacje/room3.jpg" alt="room" />
+									<img id="room3" class="relise__img relise__img--right" src="./img/realizacje/room3.jpg" alt="room" />
 								</picture>
 							</li>
 							<li class="relise__item">
 								<picture>
 									<source srcset="./img/realizacje/room4.webp 1x, ./img/realizacje/room4@2x.webp 2x" type="image/webp" />
 									<source srcset="./img/realizacje/room4.jpg 1x, ./img/realizacje/room4@2x.jpg 2x" type="image/jpeg" />
-									<img class="relise__img relise__img--left" src="./img/realizacje/room4.jpg" alt="room" />
+									<img id="room4" class="relise__img relise__img--left" src="./img/realizacje/room4.jpg" alt="room" />
 								</picture>
 								<picture>
 									<source srcset="./img/realizacje/room5.webp 1x, ./img/realizacje/room5@2x.webp 2x" type="image/webp" />
 									<source srcset="./img/realizacje/room5.jpg 1x, ./img/realizacje/room5@2x.jpg 2x" type="image/jpeg" />
-									<img class="relise__img relise__img--center" src="./img/realizacje/room5.jpg" alt="room" />
+									<img id="room5" class="relise__img relise__img--center" src="./img/realizacje/room5.jpg" alt="room" />
 								</picture>
 								<picture>
 									<source srcset="./img/realizacje/room6.webp 1x, ./img/realizacje/room6@2x.webp 2x" type="image/webp" />
 									<source srcset="./img/realizacje/room6.jpg 1x, ./img/realizacje/room6@2x.jpg 2x" type="image/jpeg" />
-									<img class="relise__img relise__img--right" src="./img/realizacje/room6.jpg" alt="room" />
+									<img id="room6" class="relise__img relise__img--right" src="./img/realizacje/room6.jpg" alt="room" />
 								</picture>
 							</li>
 							<li class="relise__item">
 								<picture>
 									<source srcset="./img/realizacje/room7.webp 1x, ./img/realizacje/room7@2x.webp 2x" type="image/webp" />
 									<source srcset="./img/realizacje/room7.jpg 1x, ./img/realizacje/room7@2x.jpg 2x" type="image/jpeg" />
-									<img class="relise__img relise__img--left" src="./img/realizacje/room7.jpg" alt="room" />
+									<img id="room7" class="relise__img relise__img--left" src="./img/realizacje/room7.jpg" alt="room" />
 								</picture>
 								<picture>
 									<source srcset="./img/realizacje/house1.webp 1x, ./img/realizacje/house1@2x.webp 2x" type="image/webp" />
 									<source srcset="./img/realizacje/house1.jpg 1x, ./img/realizacje/house1@2x.jpg 2x" type="image/jpeg" />
-									<img class="relise__img relise__img--center" src="./img/realizacje/house1.jpg" alt="room" />
+									<img id="house1" class="relise__img relise__img--center" src="./img/realizacje/house1.jpg" alt="room" />
 								</picture>
 								<picture>
 									<source srcset="./img/realizacje/house2.webp 1x, ./img/realizacje/house2@2x.webp 2x" type="image/webp" />
 									<source srcset="./img/realizacje/house2.jpg 1x, ./img/realizacje/house2@2x.jpg 2x" type="image/jpeg" />
-									<img class="relise__img relise__img--right" src="./img/realizacje/house2.jpg" alt="room" />
+									<img id="house2" class="relise__img relise__img--right" src="./img/realizacje/house2.jpg" alt="room" />
 								</picture>
 							</li>
 						</ul>
 
 						<ul class="relise__list--mini">
-							<li class="relise__item">
-								<picture>
-									<source srcset="./img/realizacje/room1.webp 1x, ./img/realizacje/room1@2x.webp 2x" type="image/webp" />
-									<source srcset="./img/realizacje/room1.jpg 1x, ./img/realizacje/room1@2x.jpg 2x" type="image/jpeg" />
-									<img class="relise__img-mini relise__img-mini--left" src="./img/realizacje/room1.jpg" alt="room" />
-								</picture>
-								<picture>
-									<source srcset="./img/realizacje/room2.webp 1x, ./img/realizacje/room2@2x.webp 2x" type="image/webp" />
-									<source srcset="./img/realizacje/room2.jpg 1x, ./img/realizacje/room2@2x.jpg 2x" type="image/jpeg" />
-									<img class="relise__img-mini relise__img-mini--center" src="./img/realizacje/room2.jpg" alt="room" />
-								</picture>
-								<picture>
-									<source srcset="./img/realizacje/room3.webp 1x, ./img/realizacje/room3@2x.webp 2x" type="image/webp" />
-									<source srcset="./img/realizacje/room3.jpg 1x, ./img/realizacje/room3@2x.jpg 2x" type="image/jpeg" />
-									<img class="relise__img-mini relise__img-mini--right" src="./img/realizacje/room3.jpg" alt="room" />
-								</picture>
+							<li class="relise__item--mini">
+								<a href="#room1"
+									><picture>
+										<source srcset="./img/realizacje/miniroom1.webp 1x, ./img/realizacje/miniroom1@2x.webp 2x" type="image/webp" />
+										<source srcset="./img/realizacje/miniroom1.jpg 1x, ./img/realizacje/miniroom1@2x.jpg 2x" type="image/jpeg" />
+										<img class="relise__img-mini relise__img-mini--left" src="./img/realizacje/miniroom1.jpg" alt="room" /> </picture
+								></a>
+								<a href="#room2"
+									><picture>
+										<source srcset="./img/realizacje/miniroom2.webp 1x, ./img/realizacje/miniroom2@2x.webp 2x" type="image/webp" />
+										<source srcset="./img/realizacje/miniroom2.jpg 1x, ./img/realizacje/miniroom2@2x.jpg 2x" type="image/jpeg" />
+										<img class="relise__img-mini relise__img-mini--center" src="./img/realizacje/miniroom2.jpg" alt="room" /> </picture
+								></a>
+								<a href="#room3"
+									><picture>
+										<source srcset="./img/realizacje/miniroom3.webp 1x, ./img/realizacje/miniroom3@2x.webp 2x" type="image/webp" />
+										<source srcset="./img/realizacje/miniroom3.jpg 1x, ./img/realizacje/miniroom3@2x.jpg 2x" type="image/jpeg" />
+										<img class="relise__img-mini relise__img-mini--right" src="./img/realizacje/miniroom3.jpg" alt="room" /> </picture
+								></a>
 							</li>
-							<li class="relise__item">
-								<picture>
-									<source srcset="./img/realizacje/room4.webp 1x, ./img/realizacje/room4@2x.webp 2x" type="image/webp" />
-									<source srcset="./img/realizacje/room4.jpg 1x, ./img/realizacje/room4@2x.jpg 2x" type="image/jpeg" />
-									<img class="relise__img-mini relise__img-mini--left" src="./img/realizacje/room4.jpg" alt="room" />
-								</picture>
-								<picture>
-									<source srcset="./img/realizacje/room5.webp 1x, ./img/realizacje/room5@2x.webp 2x" type="image/webp" />
-									<source srcset="./img/realizacje/room5.jpg 1x, ./img/realizacje/room5@2x.jpg 2x" type="image/jpeg" />
-									<img class="relise__img-mini relise__img-mini--center" src="./img/realizacje/room5.jpg" alt="room" />
-								</picture>
-								<picture>
-									<source srcset="./img/realizacje/room6.webp 1x, ./img/realizacje/room6@2x.webp 2x" type="image/webp" />
-									<source srcset="./img/realizacje/room6.jpg 1x, ./img/realizacje/room6@2x.jpg 2x" type="image/jpeg" />
-									<img class="relise__img-mini relise__img-mini--right" src="./img/realizacje/room6.jpg" alt="room" />
-								</picture>
+							<li class="relise__item--mini">
+								<a href="#room4"
+									><picture>
+										<source srcset="./img/realizacje/miniroom4.webp 1x, ./img/realizacje/miniroom4@2x.webp 2x" type="image/webp" />
+										<source srcset="./img/realizacje/miniroom4.jpg 1x, ./img/realizacje/miniroom4@2x.jpg 2x" type="image/jpeg" />
+										<img class="relise__img-mini relise__img-mini--left" src="./img/realizacje/miniroom4.jpg" alt="room" /> </picture
+								></a>
+								<a href="#room5"
+									><picture>
+										<source srcset="./img/realizacje/miniroom5.webp 1x, ./img/realizacje/miniroom5@2x.webp 2x" type="image/webp" />
+										<source srcset="./img/realizacje/miniroom5.jpg 1x, ./img/realizacje/miniroom5@2x.jpg 2x" type="image/jpeg" />
+										<img class="relise__img-mini relise__img-mini--center" src="./img/realizacje/miniroom5.jpg" alt="room" /> </picture
+								></a>
+								<a href="#room6"
+									><picture>
+										<source srcset="./img/realizacje/miniroom6.webp 1x, ./img/realizacje/miniroom6@2x.webp 2x" type="image/webp" />
+										<source srcset="./img/realizacje/miniroom6.jpg 1x, ./img/realizacje/miniroom6@2x.jpg 2x" type="image/jpeg" />
+										<img class="relise__img-mini relise__img-mini--right" src="./img/realizacje/miniroom6.jpg" alt="room" /> </picture
+								></a>
 							</li>
-							<li class="relise__item">
-								<picture>
-									<source srcset="./img/realizacje/room7.webp 1x, ./img/realizacje/room7@2x.webp 2x" type="image/webp" />
-									<source srcset="./img/realizacje/room7.jpg 1x, ./img/realizacje/room7@2x.jpg 2x" type="image/jpeg" />
-									<img class="relise__img-mini relise__img-mini--left" src="./img/realizacje/room7.jpg" alt="room" />
-								</picture>
-								<picture>
-									<source srcset="./img/realizacje/house1.webp 1x, ./img/realizacje/house1@2x.webp 2x" type="image/webp" />
-									<source srcset="./img/realizacje/house1.jpg 1x, ./img/realizacje/house1@2x.jpg 2x" type="image/jpeg" />
-									<img class="relise__img-mini relise__img-mini--center" src="./img/realizacje/house1.jpg" alt="room" />
-								</picture>
-								<picture>
-									<source srcset="./img/realizacje/house2.webp 1x, ./img/realizacje/house2@2x.webp 2x" type="image/webp" />
-									<source srcset="./img/realizacje/house2.jpg 1x, ./img/realizacje/house2@2x.jpg 2x" type="image/jpeg" />
-									<img class="relise__img-mini relise__img-mini--right" src="./img/realizacje/house2.jpg" alt="room" />
-								</picture>
+							<li class="relise__item--mini">
+								<a href="#room7"
+									><picture>
+										<source srcset="./img/realizacje/miniroom7.webp 1x, ./img/realizacje/miniroom7@2x.webp 2x" type="image/webp" />
+										<source srcset="./img/realizacje/miniroom7.jpg 1x, ./img/realizacje/miniroom7@2x.jpg 2x" type="image/jpeg" />
+										<img class="relise__img-mini relise__img-mini--left" src="./img/realizacje/miniroom7.jpg" alt="room" /> </picture
+								></a>
+								<a href="#house1"
+									><picture>
+										<source srcset="./img/realizacje/minihouse1.webp 1x, ./img/realizacje/minihouse1@2x.webp 2x" type="image/webp" />
+										<source srcset="./img/realizacje/minihouse1.jpg 1x, ./img/realizacje/minihouse1@2x.jpg 2x" type="image/jpeg" />
+										<img class="relise__img-mini relise__img-mini--center" src="./img/realizacje/minihouse1.jpg" alt="room" /> </picture
+								></a>
+								<a href="#house2"
+									><picture>
+										<source srcset="./img/realizacje/minihouse2.webp 1x, ./img/realizacje/minihouse2@2x.webp 2x" type="image/webp" />
+										<source srcset="./img/realizacje/minihouse2.jpg 1x, ./img/realizacje/minihouse2@2x.jpg 2x" type="image/jpeg" />
+										<img class="relise__img-mini relise__img-mini--right" src="./img/realizacje/minihouse2.jpg" alt="room" /> </picture
+								></a>
 							</li>
 						</ul>
 					</div>
 				</div>
 			</section>
-			<section class="opinions">
+			<section class="opinions" id="opinions">
 				<div class="container opinions__container">
 					<h2 class="opinions__title">Opinie</h2>
 
 					<div class="swiper-container">
 						<div class="swiper-wrapper">
 							<div class="swiper-slide">
-								<div class="card">
+								<div class="card ">
 									<div class="corner top-left"></div>
 									<div class="corner top-right"></div>
 									<div class="corner bottom-left"></div>
@@ -279,6 +292,7 @@
 										<div class="btn__container btn__container--card">
 											<a
 												class="btn btn--card"
+												target="_blank"
 												href="https://www.google.com/maps/place/CześćFOTO+-+fotografia+nieruchomości+i+wnętrz,+Stefana+Żeromskiego+1,+01-887+Warszawa/data=!4m2!3m1!1s0x471eb7d2f8e1c885:0x231f9d283612d856?utm_source=mstt_1&entry=gps&coh=192189&g_ep=CAESCjExLjE0OC4xMDUYACDXggMqfiw5NDIzMTc5Niw5NDI0MjU4Myw5NDIyMzI5OSw5NDIxNjQxMyw5NDIxMjQ5Niw5NDIwNzM5NCw5NDIwNzUwNiw5NDIwODUwNiw5NDIxNzUyMyw5NDIxODY1Myw5NDIyOTgzOSw0NzA4NzExOCw0NzA4NDM5Myw5NDIxMzIwMEICUEw%3D"
 											>
 												Zobacz opinie w&#160;Google
@@ -293,7 +307,9 @@
 										</div>
 									</div>
 								</div>
-								<div class="card">
+							</div>
+							<div class="swiper-slide">
+								<div class="card ">
 									<div class="corner top-left"></div>
 									<div class="corner top-right"></div>
 									<div class="corner bottom-left"></div>
@@ -311,6 +327,7 @@
 										<div class="btn__container btn__container--card">
 											<a
 												class="btn btn--card"
+												target="_blank"
 												href="https://www.google.com/maps/place/CześćFOTO+-+fotografia+nieruchomości+i+wnętrz,+Stefana+Żeromskiego+1,+01-887+Warszawa/data=!4m2!3m1!1s0x471eb7d2f8e1c885:0x231f9d283612d856?utm_source=mstt_1&entry=gps&coh=192189&g_ep=CAESCjExLjE0OC4xMDUYACDXggMqfiw5NDIzMTc5Niw5NDI0MjU4Myw5NDIyMzI5OSw5NDIxNjQxMyw5NDIxMjQ5Niw5NDIwNzM5NCw5NDIwNzUwNiw5NDIwODUwNiw5NDIxNzUyMyw5NDIxODY1Myw5NDIyOTgzOSw0NzA4NzExOCw0NzA4NDM5Myw5NDIxMzIwMEICUEw%3D"
 											>
 												Zobacz opinie w&#160;Google
@@ -325,7 +342,9 @@
 										</div>
 									</div>
 								</div>
-								<div class="card">
+							</div>
+							<div class="swiper-slide">
+								<div class="card ">
 									<div class="corner top-left"></div>
 									<div class="corner top-right"></div>
 									<div class="corner bottom-left"></div>
@@ -340,6 +359,7 @@
 										<div class="btn__container btn__container--card">
 											<a
 												class="btn btn--card"
+												target="_blank"
 												href="https://www.google.com/maps/place/CześćFOTO+-+fotografia+nieruchomości+i+wnętrz,+Stefana+Żeromskiego+1,+01-887+Warszawa/data=!4m2!3m1!1s0x471eb7d2f8e1c885:0x231f9d283612d856?utm_source=mstt_1&entry=gps&coh=192189&g_ep=CAESCjExLjE0OC4xMDUYACDXggMqfiw5NDIzMTc5Niw5NDI0MjU4Myw5NDIyMzI5OSw5NDIxNjQxMyw5NDIxMjQ5Niw5NDIwNzM5NCw5NDIwNzUwNiw5NDIwODUwNiw5NDIxNzUyMyw5NDIxODY1Myw5NDIyOTgzOSw0NzA4NzExOCw0NzA4NDM5Myw5NDIxMzIwMEICUEw%3D"
 											>
 												Zobacz opinie w&#160;Google
@@ -354,9 +374,87 @@
 										</div>
 									</div>
 								</div>
-								;
 							</div>
+							;
 						</div>
+					</div>
+				</div>
+			</section>
+			<section class="price">
+				<div class="container price__container">
+					<h2 class="title">
+						Cennik
+					</h2>
+					<div class="price__wrapper">
+						<ul class="price__list">
+							<li class="price__item">
+								<div class="pricecard">
+									<picture>
+										<source srcset="./img/favicons/cam.webp 1x, ./img/favicons/cam@2x.webp 2x" type="image/webp" />
+										<source srcset="./img/favicons/cam.png 1x, ./img/favicons/cam@2x.png 2x" type="image/png" />
+										<img src="./img/favicons/cam.png" alt="icon" />
+									</picture>
+
+									<div>
+										<h2 class="pricecard__title">Pakiet do&#160;10 zdęć</h2>
+										<p class="pricecard__text">
+											wyselekcjonowane, gotowe w&#160;48h, dostarczone elektronicznie
+										</p>
+										<p class="pricecard__price">500 zł</p>
+										<p class="pricecard__subtext">Zastosowanie: kawalerka, małe 2 pokoje</p>
+									</div>
+								</div>
+								<picture>
+									<source srcset="./img/services/lens1.webp 1x, ./img/services/lens1@2x.webp 2x" type="image/webp" />
+									<source srcset="./img/services/lens1.png 1x, ./img/services/lens1@2x.png 2x" type="image/png" />
+									<img src="./img/services/lens1.png" alt="lens" />
+								</picture>
+								<div class="pricecard">
+									<picture>
+										<source srcset="./img/favicons/cam.webp 1x, ./img/favicons/cam@2x.webp 2x" type="image/webp" />
+										<source srcset="./img/favicons/cam.png 1x, ./img/favicons/cam@2x.png 2x" type="image/png" />
+										<img src="./img/favicons/cam.png" alt="icon" />
+									</picture>
+
+									<div>
+										<h2 class="pricecard__title">Pakiet do&#160;10 zdęć</h2>
+										<p class="pricecard__text">
+											wyselekcjonowane, gotowe w&#160;48h, dostarczone elektronicznie
+										</p>
+										<p class="pricecard__price">500 zł</p>
+										<p class="pricecard__subtext">Zastosowanie: kawalerka, małe 2 pokoje</p>
+									</div>
+								</div>
+							</li>
+							<li class="price__item">
+								<picture>
+									<source srcset="./img/services/lens2.webp 1x, ./img/services/lens2@2x.webp 2x" type="image/webp" />
+									<source srcset="./img/services/lens2.png 1x, ./img/services/lens2@2x.png 2x" type="image/png" />
+									<img src="./img/services/lens2.png" alt="lens" />
+								</picture>
+								<div class="pricecard">
+									<picture>
+										<source srcset="./img/favicons/cam.webp 1x, ./img/favicons/cam@2x.webp 2x" type="image/webp" />
+										<source srcset="./img/favicons/cam.png 1x, ./img/favicons/cam@2x.png 2x" type="image/png" />
+										<img src="./img/favicons/cam.png" alt="icon" />
+									</picture>
+
+									<div>
+										<h2 class="pricecard__title">Pakiet do&#160;10 zdęć</h2>
+										<p class="pricecard__text">
+											wyselekcjonowane, gotowe w&#160;48h, dostarczone elektronicznie
+										</p>
+										<p class="pricecard__price">500 zł</p>
+										<p class="pricecard__subtext">Zastosowanie: kawalerka, małe 2 pokoje</p>
+									</div>
+								</div>
+								<picture>
+									<source srcset="./img/services/lens3.webp 1x, ./img/services/lens3@2x.webp 2x" type="image/webp" />
+									<source srcset="./img/services/lens3.png 1x, ./img/services/lens3@2x.png 2x" type="image/png" />
+									<img src="./img/services/lens3.png" alt="lens" />
+								</picture>
+							</li>
+						</ul>
 					</div>
 				</div>
 			</section>
@@ -370,5 +468,6 @@
 		</footer>
 
 		<script src="./js/index.bundle.js"></script>
+		<!-- <object type="image/svg+xml" data="../img/svgicons/blobs.svg" style="display:none;"></object> -->
 	</body>
 </html>
