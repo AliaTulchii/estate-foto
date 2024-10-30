@@ -1,16 +1,4 @@
-.btn__container{
-    display: flex;
-    align-items: center;
 
-    &--card:hover{
-        width: 320px;
-        padding: 2px 0;
-        border-radius: 20px;
-        background-color: var(--border-color);
-        color: var(--page-bg);
-        transition: color 0.5s ease-in-out;
-    }
-}
 .btn{
     padding: 12.5px 20px;
     background-color: var(--accent);
@@ -23,18 +11,6 @@
     overflow: hidden;
     transition: color 0.5s ease-in;
     z-index: 1;
-
-    &--card{
-        background-color: transparent;
-        border: solid 1px var(--border-color);
-    }
-
-    &--card:hover{
-        background-color: transparent;
-        border: none;
-        color: var(--page-bg);
-        transition: color 0.5s ease-in-out;
-    }
 }
 
 .btn__icon{
@@ -44,32 +20,89 @@
     padding: 7px 8px;
     background-color: var(--accent);
     border-radius: 50%;
-
-    transform: translateX(-100%);
-    transition: transform 0.5s ease-in-out;
-    
-    
+    position: absolute; /* Залишається всередині кнопки */
+    // left: calc(50% - 5px); /* Вирівнює іконку справа, враховуючи відстань */
+    opacity: 0; /* Приховує іконку за замовчуванням */
+    transform: translateX(-10px); /* Вирівнює вправо для анімації */
+    transition: opacity 0.3s ease, transform 0.5s ease-in-out; /* Анімація */
 }
 
 .btn__container:hover .btn__icon{
-    transform: translateX(0%);
+    // transform: translateX(0%);
+    opacity: 1; /* Показує іконку при наведенні */
+    transform: translateX(0); /* Вирівнює іконку */
 
 }
 
-.btn__icon--card{
+.cardbtn__container{
+    width: 270px;
+    // padding: 12px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--page-bg);
+    border: solid 1px var(--border-color);
+    border-radius: 20px;
+
+
+    &:hover{
+        background-color: var(--border-color);
+    }
+}
+
+.cardbtn__container-yellow{
+    width: 270px;
+    // padding: 12px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--accent);
+    background-color: var(--border-color);
+    border: solid 1px var(--border-color);
+    border-radius: 20px;
+
+
+    &:hover{
+        background-color: var(--border-color);
+    }
+}
+
+.cardbtn__container:hover .cardbtn{
+        border: none;
+    color: var(--page-bg);
+    transition: color 0.1s ease-in-out;
+}
+
+.cardbtn{
+    padding: 12.5px 0px ;
+    background-color: transparent;
+    border-radius: 20px;
     position: relative;
-    padding: 7px 8px;
+    overflow: hidden;
+    transition: color 0.5s ease-in;
+    z-index: 1;
+
+    // &--yellow{
+    //     color: var(--accent);
+    // }
+}
+
+.cardbtn__icon{
+position: relative;
     background-color: transparent;
     border-radius: 50%;
-
-    transform: translateX(-100%);
-    transition: transform 0.5s ease-in-out;
-    
-    
+    position: absolute; /* Залишається всередині кнопки */
+    // left: calc(50% - 5px); /* Вирівнює іконку справа, враховуючи відстань */
+    opacity: 0; /* Приховує іконку за замовчуванням */
+    transform: translateX(80px); /* Вирівнює вправо для анімації */
+    transition: opacity 0.3s ease, transform 0.5s ease-in-out; /* Анімація */
 }
 
-.btn__container:hover .btn__icon--card{
-    display: block;
-    transform: translateX(-10%);
-    background-color: var(--border-color);
+
+
+.cardbtn__container:hover .cardbtn__icon,
+.cardbtn__container-yellow:hover .cardbtn__icon    {
+    opacity: 1; /* Показує іконку при наведенні */
+    transform: translateX(115px); /* Вирівнює іконку */
+
 }
