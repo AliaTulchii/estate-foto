@@ -22,7 +22,6 @@ reliseScroll()
 import reliseMiniSlider from './modules/relise/reliseMiniSlider.js';
 reliseMiniSlider()
 
-// import heroAnimation from './modules/animation.js';
-// heroAnimation();
+import requiredInput from './modules/requiredInput.js';
+requiredInput()
 
-// window.onload = heroAnimation;

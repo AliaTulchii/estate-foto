@@ -1,22 +1,74 @@
-<section class="price">
-    <div class="container price__container">
-        <h2 class="title">
-            Cennik
-        </h2>
-        <div class="price__wrapper">
-            <ul class="price__list">
-                <li class="price__item">
-                    @@include('card/priceCard.html')
-                    <img src="../../img/services/lens1.png" alt="lens">
-                    @@include('card/priceCard.html')
+<section class="price" id="price">
+  <div class="container price__container">
+    <h2 class="title">
+      Cennik
+    </h2>
+
+      <ul class="price__list">
+        <li class="price__item">
+          <ul class="pricecard__list ">
+
+            <li class="pricecard__item pricecard__item-first">
+              <img class="pricecard__icon" src="../../../img/favicons/cam.png" alt="icon" />
+              <div class="pricecard__content">
+                <h2 class="pricecard__title">Pakiet do 10 zdęć</h2>
+                <p class="pricecard__text">
+                  wyselekcjonowane, gotowe w 48h, dostarczone elektronicznie
+                </p>
+                <p class="pricecard__price">500 zł</p>
+                <p class="pricecard__subtext">
+                  Zastosowanie: kawalerka, małe 2 pokoje
+                </p>
+              </div>
+            </li>
+
+            <li class="pricecard__item">
+            <img class="pricecard__img" src="../../img/services/lens1.png" alt="lens" />
+            </li>
+
+            <li class="pricecard__item pricecard__item-first">
+                <img class="pricecard__icon" src="../../../img/favicons/cam.png" alt="icon" />
+  
+                <div>
+                  <h2 class="pricecard__title">Pakiet do 20 zdęć</h2>
+                  <p class="pricecard__text">
+                    wyselekcjonowane, gotowe w 48h, dostarczone elektronicznie
+                  </p>
+                  <p class="pricecard__price">650 zł</p>
+                  <p class="pricecard__subtext">
+                    Zastosowanie: 2 pokoje, 3 pokoje, mały segment
+                  </p>
+                </div>
+              </li>
+          </ul>
+        </li>
+
+
+        <li class="price__item">
+            <ul class="pricecard__list pricecard__list-second">
+                <li class="pricecard__item">
+                    <img class="pricecard__img" src="../../img/services/lens2.png" alt="lens" />
                 </li>
-                <li class="price__item">
-                    <img src="../../img/services/lens2.png" alt="lens">
-                    @@include('card/priceCard.html')
-                    <img src="../../img/services/lens3.png" alt="lens">
+                <li class="pricecard__item pricecard__item-second">
+                    <img class="pricecard__icon" src="../../../img/favicons/cam.png" alt="icon" />
+      
+                    <div>
+                      <h2 class="pricecard__title">Pakiet do 30 zdęć</h2>
+                      <p class="pricecard__text">
+                        wyselekcjonowane, gotowe w 48h, dostarczone elektronicznie
+                      </p>
+                      <p class="pricecard__price">800 zł</p>
+                      <p class="pricecard__subtext">
+                        Zastosowanie: duże mieszkanie, segment, dom
+                      </p>
+                    </div>
                 </li>
-                
-            </ul>
-        </div>
-    </div>
+                <li class="pricecard__item">
+                    <img class="pricecard__img" src="../../img/services/lens3.png" alt="lens" />
+                  </li>
+              </ul>
+        </li>
+      </ul>
+
+  </div>
 </section>

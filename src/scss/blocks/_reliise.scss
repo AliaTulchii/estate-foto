@@ -8,11 +8,20 @@
     align-items: center;
 }
 
+.relise__title {
+	margin: 0 0 180px 0;
+	font-size: 72px;
+	font-weight: 700;
+	font-family: var(--font-titles);
+	line-height: 1.11;
+	text-transform: uppercase;
+}
+
 
 .relise__list--mini {
-    
+    height: 665px !important;
     position: relative;
-    top: 0;
+    top: 20px !important;
     z-index: 10;
 }
 
@@ -32,7 +41,9 @@
 
 .relise__gallery{
     display: flex;
-    margin-top: 80px;
+    justify-content: start;
+    align-items: flex-start;
+    // padding-top: 80px;
 }
 
 .relise__img{

@@ -1,23 +1,45 @@
 import gsap from "gsap";
 
 function scrollImg() {
-    // Отримуємо всі зображення з класом services__img
-const images = document.querySelectorAll('.services__img');
+    const images = document.querySelectorAll('.services__img, .pricecard__img');
+    let baseDuration = 40;  // Базова тривалість обертання в секундах
+    let fastDuration = 5;   // Тривалість обертання під час скролу
+    let currentDuration = baseDuration; // Поточна тривалість обертання
 
-// Додаємо обробник події для прокрутки
-window.addEventListener('scroll', () => {
-    const scrollY = window.scrollY; // Отримуємо позицію прокрутки
-
-    images.forEach((img, index) => {
-        // Обчислюємо обертання на основі позиції прокрутки
-        const rotation = scrollY * 0.1; // Множник для контролю швидкості обертання
-        gsap.to(img, {
-            rotation: rotation,
-            ease: "power1.out",
-            duration: 0.3 // Тривалість анімації
+    // Функція для налаштування швидкості обертання
+    function setRotationSpeed(duration) {
+        images.forEach((img) => {
+            gsap.to(img, {
+                duration: duration,
+                rotation: "+=360",
+                repeat: -1,
+                ease: "linear",
+                paused: false // Пауза не потрібна, щоб уникнути проблем
+            });
         });
+    }
+
+    // Запуск обертання з базовою швидкістю
+    setRotationSpeed(currentDuration);
+
+    // Додаємо обробник події прокрутки
+    window.addEventListener('scroll', () => {
+        // Якщо прокрутка активна, пришвидшуємо обертання
+        if (currentDuration !== fastDuration) {
+            currentDuration = fastDuration;
+            setRotationSpeed(currentDuration);
+        }
+
+        // Очищуємо таймер затримки
+        clearTimeout(window.scrollTimeout);
+        window.scrollTimeout = setTimeout(() => {
+            // Повертаємо до базової швидкості після зупинки скролу
+            if (currentDuration !== baseDuration) {
+                currentDuration = baseDuration;
+                setRotationSpeed(currentDuration);
+            }
+        }, 100); // Затримка перед поверненням до базової швидкості
     });
-});
 }
 
 export default scrollImg;

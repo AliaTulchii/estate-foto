@@ -1,0 +1,147 @@
+.contact{
+    margin: 0 0 104px 0;
+}
+.contact__container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact__leftwrapper{
+    width: 824px;
+    height: 956px;
+    margin-right: 24px;
+    padding: 40px 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: start;
+
+    background-image: url(../../img/contact/dashed.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+
+.contact__content{
+    width: 615px;
+}
+
+.contact__title{
+    margin-bottom: 12px;
+    font-size: 72px;
+	font-weight: 700;
+	font-family: var(--font-titles);
+	line-height: 1.11;
+	text-transform: uppercase;
+}
+
+.contact__subtitle{
+    font-family: var(--font-accent);
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 0.92;
+    margin-bottom: 24px;
+}
+
+.contact__text{
+    font-family: var(--font-main);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.38;
+}
+
+
+.contact__form{
+    width: 671px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.contact__input{
+    width: 100%;
+    padding: 12px 24px;
+    border: solid 1px var(--input-border);
+    border-radius: 20px;
+
+
+    &--name{
+        margin-bottom: 14px;
+    }
+
+    &:hover{
+        background-color: var(--hover-input);
+    }
+}
+
+.input__wrapper{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    column-gap: 14px;
+    margin-bottom: 14px;
+}
+
+.contact__textarea{
+    width: 100%;
+    padding: 12px 24px;
+    margin-bottom: 24px;
+    border: solid 1px var(--input-border);
+    border-radius: 20px;
+    resize: none;
+
+    &:hover{
+        background-color: var(--hover-input);
+    }
+}
+
+.filled{
+    background-color: var(--accent); /* Задайте ваш колір тут */
+    transition: background-color 0.3s ease-in-out; /* Плавний перехід */
+}
+
+
+
+.contact__btn{
+    position: relative;
+    width: 100%;
+    padding: 12px 0;
+    border-radius: 20px;
+    border: solid 1px var(--border-color);
+    text-align: center;
+    background-color: var(--border-color);
+    color: var(--page-bg);
+    // z-index: 2;
+
+    &:hover{
+    background-color: var(--accent);
+    color: var(--border-color);
+    }
+}
+
+.contact__icon{
+    position: absolute;
+    top: 11px;
+    width: 25px;
+    height: 25px;
+    // padding: 7px 8px;
+    // background-color: var(--accent);
+    border-radius: 50%;
+    position: absolute; /* Залишається всередині кнопки */
+    // left: calc(50% - 5px); /* Вирівнює іконку справа, враховуючи відстань */
+    opacity: 0; /* Приховує іконку за замовчуванням */
+    transform: translateX(405px);
+     /* Вирівнює вправо для анімації */
+    transition: opacity 0.3s ease, transform 0.5s ease-in-out; 
+    z-index: 4;
+}
+
+.contact__btn:hover .contact__icon{
+    // transform: translateX(0%);
+    opacity: 1; /* Показує іконку при наведенні */
+    transform: translateX(415px); /* Вирівнює іконку */
+
+}

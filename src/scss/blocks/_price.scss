@@ -1,0 +1,86 @@
+.price{
+    margin: 0 0 152px 0;
+}
+.price__container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.price__list{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 24px;
+}
+
+.pricecard__list{
+    display: flex;
+    gap: 24px;
+}
+
+
+.pricecard__item{
+    width: 443px;
+    height: 526px;
+    padding: 53px 32px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    
+}
+
+.pricecard__item-first:nth-of-type(1),
+.pricecard__item-second:nth-of-type(2),
+.pricecard__item-first:nth-of-type(3){
+   
+    border-radius: 10px;
+    background-image: url('../../img/price/dashed.png');
+    // background-position:center;
+    background-repeat: no-repeat;
+    background-size: contain;
+
+    &:hover{
+        background-image:none;
+        background-color: var(--accent);
+        transition:  background-color 0.5s ease-in-out;
+    }
+}
+.pricecard__icon{
+    width: 51px;
+}
+
+.pricecard__title{
+    margin-bottom: 12px;
+    font-family: var(--font-accent);
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 1.2;
+    color: var(--title-color);
+}
+
+.pricecard__text{
+    margin-bottom: 40px;
+    font-family: var(--font-main);
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 1.3;
+    color: var(--border-color);
+}
+
+.pricecard__price{
+    margin-bottom: 8px;
+    font-family: var(--font-accent);
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 1.2;
+}
+
+.pricecard__subtext{
+    font-family: var(--font-main);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.4;
+}

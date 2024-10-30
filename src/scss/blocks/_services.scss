@@ -44,10 +44,10 @@
     line-height: 1.4;
 }
 
-.services__img{
+.services__img {
     width: 450px;
     height: 450px;
-    // animation: spin 40s linear infinite;
+    // animation: spin var(--spin-speed, 40s) linear infinite; /* Використовуємо змінну для швидкості */
 }
 
 @keyframes spin {

@@ -12,7 +12,7 @@
 	</head>
 
 	<body>
-		<header class="header">
+		<header class="header" id="home">
 			<div class="container">
 				<div class="header__row">
 					<nav class="header__nav nav">
@@ -27,8 +27,8 @@
 						</div>
 
 						<ul class="nav__list nav__list--right">
-							<li><a href="#cennik" class="nav__item">Cennik</a></li>
-							<li><a href="#kontakt" class="nav__item">Kontakt</a></li>
+							<li><a href="#price" class="nav__item">Cennik</a></li>
+							<li><a href="#contact" class="nav__item">Kontakt</a></li>
 							<li><a href="tel:+48664502750" class="nav__item--tel">+48 664 502 750</a></li>
 						</ul>
 					</nav>
@@ -54,7 +54,7 @@
 						</h1>
 
 						<div class="btn__container">
-							<a href="#kontakt" class="btn">
+							<a href="#contact" class="btn">
 								Um&#243;w się na&#160;sesję
 							</a>
 							<span class="btn__icon">
@@ -369,94 +369,166 @@
 					</div>
 				</div>
 			</section>
-			<section class="price">
+			<section class="price" id="price">
 				<div class="container price__container">
 					<h2 class="title">
 						Cennik
 					</h2>
-					<div class="price__wrapper">
-						<ul class="price__list">
-							<li class="price__item">
-								<div class="pricecard">
+
+					<ul class="price__list">
+						<li class="price__item">
+							<ul class="pricecard__list ">
+								<li class="pricecard__item pricecard__item-first">
 									<picture>
 										<source srcset="./img/favicons/cam.webp 1x, ./img/favicons/cam@2x.webp 2x" type="image/webp" />
 										<source srcset="./img/favicons/cam.png 1x, ./img/favicons/cam@2x.png 2x" type="image/png" />
-										<img src="./img/favicons/cam.png" alt="icon" />
+										<img class="pricecard__icon" src="./img/favicons/cam.png" alt="icon" />
 									</picture>
-
-									<div>
+									<div class="pricecard__content">
 										<h2 class="pricecard__title">Pakiet do&#160;10 zdęć</h2>
 										<p class="pricecard__text">
 											wyselekcjonowane, gotowe w&#160;48h, dostarczone elektronicznie
 										</p>
 										<p class="pricecard__price">500 zł</p>
-										<p class="pricecard__subtext">Zastosowanie: kawalerka, małe 2 pokoje</p>
+										<p class="pricecard__subtext">
+											Zastosowanie: kawalerka, małe 2 pokoje
+										</p>
 									</div>
-								</div>
-								<picture>
-									<source srcset="./img/services/lens1.webp 1x, ./img/services/lens1@2x.webp 2x" type="image/webp" />
-									<source srcset="./img/services/lens1.png 1x, ./img/services/lens1@2x.png 2x" type="image/png" />
-									<img src="./img/services/lens1.png" alt="lens" />
-								</picture>
-								<div class="pricecard">
+								</li>
+
+								<li class="pricecard__item">
+									<picture>
+										<source srcset="./img/services/lens1.webp 1x, ./img/services/lens1@2x.webp 2x" type="image/webp" />
+										<source srcset="./img/services/lens1.png 1x, ./img/services/lens1@2x.png 2x" type="image/png" />
+										<img class="pricecard__img" src="./img/services/lens1.png" alt="lens" />
+									</picture>
+								</li>
+
+								<li class="pricecard__item pricecard__item-first">
 									<picture>
 										<source srcset="./img/favicons/cam.webp 1x, ./img/favicons/cam@2x.webp 2x" type="image/webp" />
 										<source srcset="./img/favicons/cam.png 1x, ./img/favicons/cam@2x.png 2x" type="image/png" />
-										<img src="./img/favicons/cam.png" alt="icon" />
+										<img class="pricecard__icon" src="./img/favicons/cam.png" alt="icon" />
 									</picture>
 
 									<div>
-										<h2 class="pricecard__title">Pakiet do&#160;10 zdęć</h2>
+										<h2 class="pricecard__title">Pakiet do&#160;20 zdęć</h2>
 										<p class="pricecard__text">
 											wyselekcjonowane, gotowe w&#160;48h, dostarczone elektronicznie
 										</p>
-										<p class="pricecard__price">500 zł</p>
-										<p class="pricecard__subtext">Zastosowanie: kawalerka, małe 2 pokoje</p>
+										<p class="pricecard__price">650 zł</p>
+										<p class="pricecard__subtext">
+											Zastosowanie: 2 pokoje, 3 pokoje, mały segment
+										</p>
 									</div>
-								</div>
-							</li>
-							<li class="price__item">
-								<picture>
-									<source srcset="./img/services/lens2.webp 1x, ./img/services/lens2@2x.webp 2x" type="image/webp" />
-									<source srcset="./img/services/lens2.png 1x, ./img/services/lens2@2x.png 2x" type="image/png" />
-									<img src="./img/services/lens2.png" alt="lens" />
-								</picture>
-								<div class="pricecard">
+								</li>
+							</ul>
+						</li>
+
+						<li class="price__item">
+							<ul class="pricecard__list pricecard__list-second">
+								<li class="pricecard__item">
+									<picture>
+										<source srcset="./img/services/lens2.webp 1x, ./img/services/lens2@2x.webp 2x" type="image/webp" />
+										<source srcset="./img/services/lens2.png 1x, ./img/services/lens2@2x.png 2x" type="image/png" />
+										<img class="pricecard__img" src="./img/services/lens2.png" alt="lens" />
+									</picture>
+								</li>
+								<li class="pricecard__item pricecard__item-second">
 									<picture>
 										<source srcset="./img/favicons/cam.webp 1x, ./img/favicons/cam@2x.webp 2x" type="image/webp" />
 										<source srcset="./img/favicons/cam.png 1x, ./img/favicons/cam@2x.png 2x" type="image/png" />
-										<img src="./img/favicons/cam.png" alt="icon" />
+										<img class="pricecard__icon" src="./img/favicons/cam.png" alt="icon" />
 									</picture>
 
 									<div>
-										<h2 class="pricecard__title">Pakiet do&#160;10 zdęć</h2>
+										<h2 class="pricecard__title">Pakiet do&#160;30 zdęć</h2>
 										<p class="pricecard__text">
 											wyselekcjonowane, gotowe w&#160;48h, dostarczone elektronicznie
 										</p>
-										<p class="pricecard__price">500 zł</p>
-										<p class="pricecard__subtext">Zastosowanie: kawalerka, małe 2 pokoje</p>
+										<p class="pricecard__price">800 zł</p>
+										<p class="pricecard__subtext">
+											Zastosowanie: duże mieszkanie, segment, dom
+										</p>
 									</div>
-								</div>
+								</li>
+								<li class="pricecard__item">
+									<picture>
+										<source srcset="./img/services/lens3.webp 1x, ./img/services/lens3@2x.webp 2x" type="image/webp" />
+										<source srcset="./img/services/lens3.png 1x, ./img/services/lens3@2x.png 2x" type="image/png" />
+										<img class="pricecard__img" src="./img/services/lens3.png" alt="lens" />
+									</picture>
+								</li>
+							</ul>
+						</li>
+					</ul>
+				</div>
+			</section>
+
+			<section class="contact" id="contact">
+				<div class="container contact__container">
+					<div class="contact__leftwrapper">
+						<div class="contact__content">
+							<h2 class="contact__title">
+								Kontakt
+							</h2>
+							<h3 class="contact__subtitle">Masz pytania? Zadzwoń do&#160;nas: <a href="tel:+48664502750">+48 664 502 750 </a></h3>
+							<p class="contact__text">
+								Jesteś gotowy, aby wyr&#243;żnić swoją nieruchomość? Skontaktuj się z&#160;nami i&#160;zarezerwuj sesję zdjęciową już dziś! Otrzymasz od&#160;nas
+								gotowe materiały w wysokiej rozdzielczości, gotowe do&#160;publikacji na portalach sprzedażowych, w&#160;katalogach lub na&#160;stronach
+								internetowych&#160;&#8212; to&#160;wszystko już w&#160;48h od&#160;wykonanej sesji zdjęciowej.
+							</p>
+						</div>
+						<form action="https://api.web3forms.com/submit" method="POST" class="contact__form">
+							<input type="hidden" name="access_key" value="370d35e2-06d5-46ba-a290-fced8f772174" />
+							<input class="contact__input contact__input--name" name="Imię" type="text" id="name" placeholder="Imię" required />
+							<div class="input__wrapper">
+								<input class="contact__input" type="email" name="email" id="email" placeholder="Email" required />
+								<input class="contact__input" type="tel" name="Numer telefonu" id="tel" placeholder="Numer telefonu" required />
+							</div>
+							<textarea class="contact__textarea" name="Wiadomość" id="message" rows="5" placeholder="Treść wiadomości" required></textarea>
+							<button class="contact__btn" type="submit">
+								Wyślij wiadomość
+
 								<picture>
-									<source srcset="./img/services/lens3.webp 1x, ./img/services/lens3@2x.webp 2x" type="image/webp" />
-									<source srcset="./img/services/lens3.png 1x, ./img/services/lens3@2x.png 2x" type="image/png" />
-									<img src="./img/services/lens3.png" alt="lens" />
+									<source srcset="./img/favicons/cam.webp 1x, ./img/favicons/cam@2x.webp 2x" type="image/webp" />
+									<source srcset="./img/favicons/cam.png 1x, ./img/favicons/cam@2x.png 2x" type="image/png" />
+									<img class="contact__icon" src="./img/favicons/cam.png" alt="camera" />
 								</picture>
-							</li>
-						</ul>
+							</button>
+						</form>
 					</div>
+
+					<img src="./img/contact/image-contact form.jpg" alt="interior" />
 				</div>
 			</section>
 		</main>
 		<footer class="footer">
-			<div class="container">
-				<div class="footer__copyright">
-					<p>Сборка сделана в&#160;школе <a href="https://webcademy.ru" target="_blank">webcademy.ru</a></p>
+			<div class="container footer__container">
+				<div class="footer__wrapper">
+					<picture>
+						<source srcset="./img/favicons/logo-footer.webp 1x, ./img/favicons/logo-footer@2x.webp 2x" type="image/webp" />
+						<source srcset="./img/favicons/logo-footer.png 1x, ./img/favicons/logo-footer@2x.png 2x" type="image/png" />
+						<img src="./img/favicons/logo-footer.png" alt="logo" />
+					</picture>
+
+					<ul class="footer__list">
+						<li class="footer__item"><a href="#home" class="footer__link">Home</a></li>
+						<li class="footer__item"><a href="#services" class="footer__link">Usługi</a></li>
+						<li class="footer__item"><a href="#relise" class="footer__link">Ostatnie Realizacje</a></li>
+						<li class="footer__item"><a href="#opinions" class="footer__link">Referencje</a></li>
+						<li class="footer__item"><a href="#price" class="footer__link">Cennik</a></li>
+						<li class="footer__item"><a href="#contact" class="footer__link">Kontakt</a></li>
+					</ul>
+
+					<a href="#" class="footer__confidence">Polityka prywatności</a>
 				</div>
+
+				<p class="footer__text">Estatefoto.pl &#169; 2024</p>
 			</div>
 		</footer>
 
 		<script src="./js/index.bundle.js"></script>
-		<!-- <object type="image/svg+xml" data="../img/svgicons/blobs.svg" style="display:none;"></object> -->
+		<!-- <script src="https://smtpjs.com/v3/smtp.js"></script> -->
 	</body>
 </html>
