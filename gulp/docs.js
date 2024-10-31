@@ -143,15 +143,15 @@ gulp.task('images:docs', function () {
 		gulp
 			.src(['./src/img/**/*.{jpg,png}', '!./src/img/svgicons/**/*'])
 			.pipe(changed('./docs/img/'))
-			// .pipe(
-			// 	imagemin([
-			// 		imageminWebp({
-			// 			quality: 85,
-			// 		}),
-			// 	])
-			// )
-			// .pipe(rename({ extname: '.webp' }))
-			// .pipe(gulp.dest('./docs/img/'))
+			.pipe(
+				imagemin([
+					imageminWebp({
+						quality: 85,
+					}),
+				])
+			)
+			.pipe(rename({ extname: '.webp' }))
+			.pipe(gulp.dest('./docs/img/'))
 			.pipe(gulp.src('./src/img/**/*'))
 			.pipe(changed('./docs/img/'))
 			.pipe(
