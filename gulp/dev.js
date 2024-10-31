@@ -124,15 +124,15 @@ gulp.task('images:dev', function () {
 		gulp
 			.src(['./src/img/**/*', '!./src/img/svgicons/**/*'])
 			.pipe(changed('./build/img/'))
-			.pipe(
-				imagemin([
-					imageminWebp({
-						quality: 85,
-					}),
-				])
-			)
-			.pipe(rename({ extname: '.webp' }))
-			.pipe(gulp.dest('./build/img/'))
+			// .pipe(
+			// 	imagemin([
+			// 		imageminWebp({
+			// 			quality: 85,
+			// 		}),
+			// 	])
+			// )
+			// .pipe(rename({ extname: '.webp' }))
+			// .pipe(gulp.dest('./build/img/'))
 			.pipe(gulp.src(['./src/img/**/*.{jpg,png}', '!./src/img/svgicons/**/*']))
 			.pipe(changed('./build/img/'))
 			.pipe(
