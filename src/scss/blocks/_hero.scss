@@ -8,11 +8,40 @@
     justify-content: center;
     text-align: center;
     overflow: hidden;
-    background-image: url('../../img/hero/home@2x.jpg'); /* Скетч фото */
+    background-image: url('../../img/hero/home.jpg'); /* Скетч фото */
     background-size: cover;
     background-position: center;
+    // filter: grayscale(100%);
+    transition: background-image 2s ease-in-out;
+    z-index: 0;
+    
 }
 
+.hero .new-background {
+    position: absolute;
+    top: 100%; /* Виходить з нижньої частини */
+    left: 100%; /* Виходить з правої частини */
+    width: 100%;
+    height: 100%;
+    background-image: url('../../img/hero/photo.jpg'); /* Друге зображення */
+    background-size: cover;
+    background-position: center;
+    opacity: 0; /* Початкова непрозорість */
+    transition: opacity 1s ease-in-out, top 2s ease-in-out, left 2s ease-in-out; /* Додаємо анімацію для top і left */
+}
+
+// .hero.visible {
+//     filter: grayscale(0%);
+//     &::before {
+//         animation: none;
+//         opacity: 0;
+//     }
+// }
+
+// @keyframes flicker {
+//     0% { opacity: 0.1; }
+//     100% { opacity: 0.3; }
+// }
 
 .hero__content{
     position: relative;

@@ -10,6 +10,9 @@ Fancybox.bind('[data-fancybox]', {
 import mobileNav from './modules/mobile-nav.js';
 mobileNav();
 
+import heroAnimation from './modules/animation.js';
+heroAnimation();
+
 import scrollImg from './modules/scrollImg.js';
 scrollImg()
 

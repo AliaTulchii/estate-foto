@@ -24,30 +24,40 @@
 .pricecard__item{
     width: 443px;
     height: 526px;
-    padding: 53px 32px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-
-    
+    padding: 1px;
 }
+
 
 .pricecard__item-first:nth-of-type(1),
 .pricecard__item-second:nth-of-type(2),
 .pricecard__item-first:nth-of-type(3){
-   
+    position: relative;
     border-radius: 10px;
     background-image: url('../../img/price/dashed.png');
     // background-position:center;
     background-repeat: no-repeat;
     background-size: contain;
+    z-index: 0;
+
+    
+}
+
+.pricecard__wrapper{
+    height: 100%;
+    position: relative;
+    padding: 53px 32px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    z-index: 10;
 
     &:hover{
-        background-image:none;
+        border-radius: 10px;
         background-color: var(--accent);
         transition:  background-color 0.5s ease-in-out;
     }
 }
+
 .pricecard__icon{
     width: 51px;
 }

@@ -50,11 +50,11 @@
     // animation: spin var(--spin-speed, 40s) linear infinite; /* Використовуємо змінну для швидкості */
 }
 
-@media not all and (min-resolution: 192dpi) {
-    .services__img {
-        content: url("../../img/services/lens1.png"); /* Зображення для Safari */
-    }
-}
+// @media not all and (min-resolution: 192dpi) {
+//     .services__img {
+//         content: url("../../img/services/lens1.png"); /* Зображення для Safari */
+//     }
+// }
 
 @keyframes spin {
     from {

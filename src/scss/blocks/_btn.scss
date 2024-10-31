@@ -3,14 +3,17 @@
     padding: 12.5px 20px;
     background-color: var(--accent);
     border-radius: 20px;
-
+    font-family: var(--font-main);
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 1.2;
     text-transform: uppercase;
     display: inline-flex;
     align-items: center;
     position: relative;
     overflow: hidden;
     transition: color 0.5s ease-in;
-    z-index: 1;
+    z-index: 10;
 }
 
 .btn__icon{
@@ -94,7 +97,7 @@ position: relative;
     position: absolute; /* Залишається всередині кнопки */
     // left: calc(50% - 5px); /* Вирівнює іконку справа, враховуючи відстань */
     opacity: 0; /* Приховує іконку за замовчуванням */
-    transform: translateX(80px); /* Вирівнює вправо для анімації */
+    transform: translateX(105px); /* Вирівнює вправо для анімації */
     transition: opacity 0.3s ease, transform 0.5s ease-in-out; /* Анімація */
 }
 
