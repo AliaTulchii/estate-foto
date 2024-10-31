@@ -95,6 +95,10 @@ gulp.task('html:docs', function () {
 			.pipe(
 				webpHTML({
 					extensions: ['jpg', 'jpeg', 'png', 'gif', 'webp'],
+					replace_from: /\.(png|jpg|jpeg)/,
+					replace_to: '.webp',
+					noWebpClass: 'no-webp',  // Додає клас у разі відсутності підтримки WebP
+					noWebpSelector: 'picture', // Застосовує до елементу picture
 					retina: {
 						1: '',
 						2: '@2x',
@@ -137,7 +141,7 @@ gulp.task('sass:docs', function () {
 gulp.task('images:docs', function () {
 	return (
 		gulp
-			.src(['./src/img/**/*', '!./src/img/svgicons/**/*'])
+			.src(['./src/img/**/*.{jpg,png}', '!./src/img/svgicons/**/*'])
 			.pipe(changed('./docs/img/'))
 			.pipe(
 				imagemin([

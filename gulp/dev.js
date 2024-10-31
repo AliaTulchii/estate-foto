@@ -79,6 +79,10 @@ gulp.task('html:dev', function () {
 		.pipe(
 			webpHTML({
 				extensions: ['jpg', 'jpeg', 'png', 'gif', 'webp'],
+				replace_from: /\.(png|jpg|jpeg)/,
+				replace_to: '.webp',
+				noWebpClass: 'no-webp',  // Додає клас у разі відсутності підтримки WebP
+				noWebpSelector: 'picture', // Застосовує до елементу picture
 				retina: {
 					1: '',
 					2: '@2x',
@@ -129,9 +133,14 @@ gulp.task('images:dev', function () {
 			)
 			.pipe(rename({ extname: '.webp' }))
 			.pipe(gulp.dest('./build/img/'))
-			.pipe(gulp.src(['./src/img/**/*', '!./src/img/svgicons/**/*']))
+			.pipe(gulp.src(['./src/img/**/*.{jpg,png}', '!./src/img/svgicons/**/*']))
 			.pipe(changed('./build/img/'))
-			// .pipe(imagemin({ verbose: true }))
+			.pipe(
+				imagemin({
+					optimizationLevel: 5,
+					verbose: true,
+				})
+			)
 			.pipe(gulp.dest('./build/img/'))
 	);
 });
