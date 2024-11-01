@@ -58,7 +58,7 @@ function heroAnimation() {
             newBackground.style.backgroundSize = "cover";
             newBackground.style.backgroundPosition = "center";
             newBackground.style.opacity = 0; // Початкова непрозорість
-            newBackground.style.transition = "opacity 5s ease-in-out"; // Змінили тривалість переходу на 5 секунд
+            newBackground.style.transition = "opacity 3s ease-in-out"; // Змінили тривалість переходу на 5 секунд
             hero.appendChild(newBackground); // Додаємо новий елемент у секцію
             
             // Анімація появи нового фону

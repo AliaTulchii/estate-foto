@@ -21,6 +21,7 @@
     background-repeat: no-repeat;
     background-size: contain;
     background-position: center;
+    
 }
 
 .contact__content{
@@ -144,4 +145,30 @@
     opacity: 1; /* Показує іконку при наведенні */
     transform: translateX(415px); /* Вирівнює іконку */
 
+}
+
+// .contact__img{
+//     opacity: 0; /* Початкова непрозорість */
+//     transition: opacity 1s ease-in-out, top 2s ease-in-out, left 2s ease-in-out; /* Додаємо анімацію для top і left */
+// }
+
+.contact__img {
+    width: 590px;
+    height: 956px;
+    position: relative;
+    background-image: url('../../img/contact/sketch.jpg');
+    background-size: cover;
+    background-position: center;
+    transition: background-image 2s ease-in-out;
+    overflow: hidden;
+}
+
+.contact__img .new-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0; /* Initial state for fade-in */
+    transition: opacity 2s ease-in-out;
 }

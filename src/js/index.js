@@ -28,3 +28,6 @@ reliseMiniSlider()
 import requiredInput from './modules/requiredInput.js';
 requiredInput()
 
+import contactAnimation from './modules/contactAnimation.js';
+contactAnimation();
+
