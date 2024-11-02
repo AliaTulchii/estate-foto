@@ -7,6 +7,23 @@
 	line-height: 1.43;
 	text-align: center;
 	color: var(--title-color);
+	text-transform: uppercase;
+
+	@media screen and (max-width: 768px){
+		width: 360px;
+		font-size: 28px;
+		font-weight: 500;
+		line-height: 1.28;
+        text-transform: none;
+	}
+		
+	@media screen and (min-width: 769px) and (max-width: 1199px){
+		width: 700px;
+		font-size: 36px;
+		font-weight: 500;
+		line-height: 1.28;
+        text-transform: none;
+	}
 }
 
 .services__title{
@@ -17,6 +34,23 @@
 	font-family: var(--font-titles);
 	line-height: 1.17;
 	color: var(--title-color);
+
+	@media screen and (max-width: 768px){
+		margin: 0 auto 48px;
+		width: 360px;
+		font-size: 22px;
+		font-weight: 700;
+		line-height: 1.27;
+	}
+		
+	@media screen and (min-width: 769px) and (max-width: 1199px){
+		margin: 0 auto 48px;
+		width: 700px;
+		font-size: 36px;
+		font-weight: 500;
+		line-height: 1.28;
+        text-transform: none;
+	}
 }
 
 .services__subtitle {
@@ -27,6 +61,20 @@
 	font-family: var(--font-titles);
 	line-height: 1.31;
 	color: var(--title-color);
+
+	@media screen and (max-width: 768px){
+		margin: 0 auto 48px;
+		width: 360px;
+		font-size: 20px;
+		line-height: 1.27;
+	}
+		
+	@media screen and (min-width: 769px) and (max-width: 1199px){
+		width: 300px;
+		font-size: 24px;
+		line-height: 1.28;
+        text-transform: none;
+	}
 }
 
  .opinions__title, .title {
@@ -36,6 +84,21 @@
 	font-family: var(--font-titles);
 	line-height: 1.11;
 	text-transform: uppercase;
+	text-align: center;
+
+
+	@media screen and (max-width: 768px){
+		margin: 0 auto 48px;
+		width: 360px;
+		font-size: 32px;
+		line-height: 1.27;
+	}
+		
+	@media screen and (min-width: 769px) and (max-width: 1199px){
+		width: 768px;
+		font-size: 48px;
+		line-height: 1.28;
+	}
 }
 
 .card__title{
@@ -44,4 +107,9 @@
 	font-size: 20px;
 	line-height: 1.25;
 	color: var(--text-color);
+
+
+	@media screen and (max-width: 768px){
+		font-size: 16px;
+	}
 }

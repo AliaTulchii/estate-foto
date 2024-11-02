@@ -15,6 +15,9 @@
     transition: background-image 2s ease-in-out;
     z-index: 0;
     
+    @media screen and (max-width:920px){
+        height: 768px;
+    }
 }
 
 .hero .new-background {
@@ -63,24 +66,24 @@
     // }
 }
 
-.mask-container {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    overflow: hidden; /* Щоб маски не виходили за межі секції */
-}
+// .mask-container {
+//     position: absolute;
+//     top: 0;
+//     left: 0;
+//     width: 100%;
+//     height: 100%;
+//     overflow: hidden; /* Щоб маски не виходили за межі секції */
+// }
 
 
-.mask {
-    position: absolute;
-    border-radius: 50%;
-    background-color: transparent; /* Прозорі плями */
-    clip-path: circle(0% at 50% 50%); /* Початкова маска */
-    opacity: 0; /* Початково приховані */
-    pointer-events: none; /* Не блокуємо взаємодію */
-}
+// .mask {
+//     position: absolute;
+//     border-radius: 50%;
+//     background-color: transparent; /* Прозорі плями */
+//     clip-path: circle(0% at 50% 50%); /* Початкова маска */
+//     opacity: 0; /* Початково приховані */
+//     pointer-events: none; /* Не блокуємо взаємодію */
+// }
 
 .hero.animated {
     background-image: url('../../img/hero/photo.jpg'); /* Кольорове фото, як фон */

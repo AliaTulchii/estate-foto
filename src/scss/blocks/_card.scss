@@ -5,17 +5,33 @@
     width: 100%;
     padding: 40px;
     overflow: hidden;
+
+    @media screen and (max-width: 1199px){
+        padding: 16px;
+    }
 }
 .swiper-wrapper {
     display: flex;
     flex-wrap: nowrap;
+
+    @media screen and (max-width: 1199px){
+        flex-direction: column;
+        // justify-content: center;
+        align-items: center;
+        
+    // flex-wrap: wrap;
+    }
 }
 .swiper-slide {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-shrink: 0;
-    width: 535px; /* або вкажіть конкретну ширину, якщо потрібно */
+    width: 535px; 
+    
+    @media screen and (max-width: 1199px){
+        width: 360px; 
+    }
 }
 
 .card{
@@ -71,6 +87,13 @@
         border-left: none;
         border-top: none;
     }
+
+    @media screen and (max-width: 1199px){
+        width: 310px;
+    height: 415px;
+    padding: 34px;
+    margin-bottom: 32px
+    }
 }
 
 .swiper-slide:nth-child(1) .card{
@@ -91,6 +114,11 @@
     font-size: 16px;
     font-weight: 400;
     line-height: 1.38;
+
+    @media screen and (max-width: 1199px){
+        margin-bottom: 12px;
+        font-size: 12px;
+    }
 }
 
 

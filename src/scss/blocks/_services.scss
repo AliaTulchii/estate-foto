@@ -1,14 +1,51 @@
 .services{
     margin: 0 0 96px 0;
+    .corner {
+        position: absolute;
+        width: 20px;
+        height: 20px;
+        border: 1px solid var(--title-color);
+        background-color: transparent;
+        z-index: 1;
+    }
+
+    .top-left {
+        top: 20px;
+        left: 20px;
+        border-right: none;
+        border-bottom: none;
+    }
+
+    .top-right {
+        top: 20px;
+        right: 20px;
+        border-left: none;
+        border-bottom: none;
+    }
+
+    .bottom-left {
+        bottom: 20px;
+        left: 20px;
+        border-right: none;
+        border-top: none;
+    }
+
+    .bottom-right {
+        bottom: 20px;
+        right: 20px;
+        border-left: none;
+        border-top: none;
+    }
 }
 .services__container{
     position: relative;
     border: none;
+    padding: 56px 0;
 }
 
-.services__corners{
-    margin-bottom: 56px;
-}
+// .services__corners{
+//     margin-bottom: 56px;
+// }
 
 .services__list{
     display: flex;
@@ -16,11 +53,25 @@
     justify-content: center;
     align-items: center;
 
+    
+
 }
 
 .services__item{
     display: flex;
+    flex-direction: row;
     align-items: center;
+    margin-bottom: 0;
+
+    @media screen and (max-width: 920px){
+        flex-direction: column;
+        margin-bottom: 40px;
+    }
+
+    @media screen and (min-width: 769px) and (max-width: 1199px){
+		width: 668px;
+        flex-direction: row;
+    }
 
     &--content{
         padding: 176px 75px;
@@ -28,12 +79,39 @@
         
         display: flex;
         flex-direction: column;
+        @media screen and (max-width: 768px){
+            padding: 0 0 27px 0;
+            width: 360px;
+            font-size: 16px;
+        }
+
+        @media screen and (min-width: 769px) and (max-width: 1199px){
+            padding: 56px 18px;
+        width: 580px;
+        }
+
     }
 
     &--reverse{
         flex-direction: row-reverse;
         margin-left: 200px;
+        @media screen and (max-width: 768px){
+            flex-direction: column;
+            width: 360px;
+            margin-left: 0;
+        }
+
+        @media screen and (min-width: 769px) and (max-width: 1199px){
+            flex-direction: row-reverse;
+        margin-left: 50px;
+        }
+
+        
     }
+
+    
+
+
 }
 
 .services__text{
@@ -42,12 +120,21 @@
     font-weight: 400;
     font-size: 20px;
     line-height: 1.4;
+    
+    @media screen and (max-width: 920px){
+		width: 360px;
+		font-size: 16px;
+	}
 }
 
 .services__img {
     width: 450px;
     height: 450px;
-    // animation: spin var(--spin-speed, 40s) linear infinite; /* Використовуємо змінну для швидкості */
+   
+    @media screen and (max-width: 1199px){
+        max-width: 250px;
+        max-height: 250px;
+    }
 }
 
 // @media not all and (min-resolution: 192dpi) {
