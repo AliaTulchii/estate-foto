@@ -2,8 +2,14 @@
 	padding: 24px 0 17px 0;
 	display: flex;
 	justify-content: space-between;
+
 	@media screen and (min-width:920px){
 		display: none;
+	
+	}
+
+	@media screen and (max-width:768px){
+		padding: 0;
 	}
 }
 
@@ -14,14 +20,26 @@
 }
 
 .mobilenav__tel{
+	height: 44px;
 	padding: 8px 16px;
 	border: solid 1px var(--border-color);
 	border-radius: 20px;
+	font-size: 14px;
+	text-align: center;
 }
 
 .mobilenav-btn{	
 	display: flex;
 	align-items: center;
+}
+
+.mobilenav-btn--active .mobilenav-text {
+	background-color: var(--border-color); /* Змінюємо фон на чорний */
+	color: var(--accent); /* Змінюємо текст на білий */
+}
+
+.mobilenav-btn--active .mobilenav-icon {
+	background-color: black; /* Іконка теж стає чорного фону */
 }
 
 .mobilenav-text{
