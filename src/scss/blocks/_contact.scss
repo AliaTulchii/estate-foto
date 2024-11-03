@@ -3,8 +3,15 @@
 }
 .contact__container{
     display: flex;
+    flex-direction: row;
     justify-content: center;
     align-items: center;
+    row-gap: 0;
+
+    @media screen and (max-width: 768px){
+        flex-direction: column-reverse;
+        row-gap: 24px;
+    }
 }
 
 .contact__leftwrapper{
@@ -17,15 +24,28 @@
     justify-content: space-between;
     align-items: start;
 
-    background-image: url(../../img/contact/dashed.png);
+    background-image: url(../../img/contact/dasheddesktop.png);
     background-repeat: no-repeat;
     background-size: contain;
     background-position: center;
     
+
+    @media screen and (max-width:768px){
+        width: 360px;
+        height: 769px;
+    margin-right: 0px;
+    padding: 24px 16px;
+    background-image: url(../../img/contact/dashedmobile.png);
+
+    }
 }
 
 .contact__content{
     width: 615px;
+
+    @media screen and (max-width:768px){
+        width: 328px;
+    }
 }
 
 .contact__title{
@@ -35,6 +55,11 @@
 	font-family: var(--font-titles);
 	line-height: 1.11;
 	text-transform: uppercase;
+
+    @media screen and (max-width: 768px){
+        font-size: 32px;
+        line-height: 1.25;
+    }
 }
 
 .contact__subtitle{
@@ -43,6 +68,10 @@
     font-size: 24px;
     line-height: 0.92;
     margin-bottom: 24px;
+
+    @media screen and (max-width: 768px){
+        display: none;
+    }
 }
 
 .contact__text{
@@ -50,6 +79,10 @@
     font-weight: 400;
     font-size: 16px;
     line-height: 1.38;
+
+    @media screen and (max-width: 768px){
+        font-size: 16px;
+    }
 }
 
 
@@ -60,6 +93,9 @@
     align-items: center;
     justify-content: center;
 
+    @media screen and (max-width: 768px){
+        width: 328px;
+    }
 }
 
 .contact__input{
@@ -81,9 +117,18 @@
 .input__wrapper{
     width: 100%;
     display: flex;
+    flex-direction: row;
     justify-content: space-between;
     column-gap: 14px;
+    row-gap: 0;
     margin-bottom: 14px;
+
+    @media screen and (max-width: 768px){
+        flex-direction: column;
+        row-gap: 14px;
+    column-gap: 0;
+
+    }
 }
 
 .contact__textarea{
@@ -161,6 +206,12 @@
     background-position: center;
     transition: background-image 2s ease-in-out;
     overflow: hidden;
+
+    @media screen and (max-width: 768px){
+        width: 360px;
+    // background-image: url('../../img/contact/sketchmobile.jpg');
+        
+    }
 }
 
 .contact__img .new-background {

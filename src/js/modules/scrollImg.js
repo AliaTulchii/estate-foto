@@ -1,7 +1,7 @@
 import gsap from "gsap";
 
 function scrollImg() {
-    const images = document.querySelectorAll('.services__img, .pricecard__img');
+    const images = document.querySelectorAll('.services__img, .pricecard__img, .pricecard__iconmobile');
     let baseDuration = 40;  // Базова тривалість обертання в секундах
     let fastDuration = 5;   // Тривалість обертання під час скролу
     let currentDuration = baseDuration; // Поточна тривалість обертання
