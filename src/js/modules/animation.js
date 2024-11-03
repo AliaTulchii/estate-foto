@@ -4,43 +4,6 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 gsap.registerPlugin(ScrollTrigger);
 
 function heroAnimation() {
-    // const hero = document.querySelector(".hero");
-
-    // // Анімація при завантаженні сторінки
-    // animateHero();
-
-    // // ScrollTrigger для майбутнього використання, якщо буде потрібно
-    // ScrollTrigger.create({
-    //     trigger: hero,
-    //     start: "top 80%", // Це залишайте для можливого використання в майбутньому
-    //     onEnter: () => animateHero() // Якщо ви хочете, щоб анімація запускалася знову при повторному скролі
-    // });
-
-    // function animateHero() {
-    //     // Додаємо клас для кольорового фону
-    //     hero.classList.add("visible");
-
-    //     // // Додаємо ефект мерехтіння з невеликим повторенням для "проявлення"
-    //     // gsap.fromTo(
-    //     //     hero,
-    //     //     { opacity: 0.8 },
-    //     //     {
-    //     //         opacity: 1,
-    //     //         duration: 1.5,
-    //     //         ease: "power2.inOut",
-    //     //         repeat: 3,
-    //     //         yoyo: true
-    //     //     }
-    //     // );
-
-    //     // Основна анімація переходу до кольорового
-    //     gsap.to(hero, {
-    //         filter: "grayscale(0%)",
-    //         duration: 2,
-    //         delay: 0.2,
-    //         ease: "power2.inOut"
-    //     });
-    // }
 
     document.addEventListener("DOMContentLoaded", function() {
         const hero = document.querySelector(".hero");

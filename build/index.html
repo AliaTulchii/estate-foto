@@ -183,120 +183,399 @@
 						Ostatnie realizacje
 					</h2>
 					<div class="relise__gallery">
+						<!-- <ul class="relise__list">
+                <li class="relise__item">
+                    <picture>
+<source srcset="./img/realizacje/room1.webp 1x, ./img/realizacje/room1@2x.webp 2x" type="image/webp">
+<source srcset="./img/realizacje/room1.jpg 1x, ./img/realizacje/room1@2x.jpg 2x" type="image/jpeg">
+<img id="room1" class="relise__img relise__img--left" src="./img/realizacje/room1.jpg" alt="room">
+</picture>
+                    <picture>
+<source srcset="./img/realizacje/room2.webp 1x, ./img/realizacje/room2@2x.webp 2x" type="image/webp">
+<source srcset="./img/realizacje/room2.jpg 1x, ./img/realizacje/room2@2x.jpg 2x" type="image/jpeg">
+<img id="room2" class="relise__img relise__img--center" src="./img/realizacje/room2.jpg" alt="room">
+</picture>
+                    <picture>
+<source srcset="./img/realizacje/room3.webp 1x, ./img/realizacje/room3@2x.webp 2x" type="image/webp">
+<source srcset="./img/realizacje/room3.jpg 1x, ./img/realizacje/room3@2x.jpg 2x" type="image/jpeg">
+<img id="room3" class="relise__img relise__img--right" src="./img/realizacje/room3.jpg" alt="room">
+</picture>
+                </li>
+                <li class="relise__item">                    
+                    <picture>
+<source srcset="./img/realizacje/room4.webp 1x, ./img/realizacje/room4@2x.webp 2x" type="image/webp">
+<source srcset="./img/realizacje/room4.jpg 1x, ./img/realizacje/room4@2x.jpg 2x" type="image/jpeg">
+<img id="room4" class="relise__img relise__img--left" src="./img/realizacje/room4.jpg" alt="room">
+</picture>
+                    <picture>
+<source srcset="./img/realizacje/room5.webp 1x, ./img/realizacje/room5@2x.webp 2x" type="image/webp">
+<source srcset="./img/realizacje/room5.jpg 1x, ./img/realizacje/room5@2x.jpg 2x" type="image/jpeg">
+<img id="room5" class="relise__img relise__img--center" src="./img/realizacje/room5.jpg" alt="room">
+</picture>
+                    <picture>
+<source srcset="./img/realizacje/room6.webp 1x, ./img/realizacje/room6@2x.webp 2x" type="image/webp">
+<source srcset="./img/realizacje/room6.jpg 1x, ./img/realizacje/room6@2x.jpg 2x" type="image/jpeg">
+<img id="room6" class="relise__img relise__img--right" src="./img/realizacje/room6.jpg" alt="room">
+</picture>
+                </li>
+                <li class="relise__item">
+                    <picture>
+<source srcset="./img/realizacje/room7.webp 1x, ./img/realizacje/room7@2x.webp 2x" type="image/webp">
+<source srcset="./img/realizacje/room7.jpg 1x, ./img/realizacje/room7@2x.jpg 2x" type="image/jpeg">
+<img id="room7" class="relise__img relise__img--left" src="./img/realizacje/room7.jpg" alt="room">
+</picture>
+                    <picture>
+<source srcset="./img/realizacje/house1.webp 1x, ./img/realizacje/house1@2x.webp 2x" type="image/webp">
+<source srcset="./img/realizacje/house1.jpg 1x, ./img/realizacje/house1@2x.jpg 2x" type="image/jpeg">
+<img id="house1" class="relise__img relise__img--center" src="./img/realizacje/house1.jpg" alt="room">
+</picture>
+                    <picture>
+<source srcset="./img/realizacje/house2.webp 1x, ./img/realizacje/house2@2x.webp 2x" type="image/webp">
+<source srcset="./img/realizacje/house2.jpg 1x, ./img/realizacje/house2@2x.jpg 2x" type="image/jpeg">
+<img id="house2" class="relise__img relise__img--right" src="./img/realizacje/house2.jpg" alt="room">
+</picture>
+                </li>
+            </ul> -->
+
 						<ul class="relise__list">
 							<li class="relise__item">
 								<picture>
-									<source srcset="./img/realizacje/room1.webp 1x, ./img/realizacje/room1@2x.webp 2x" type="image/webp" />
-									<source srcset="./img/realizacje/room1.jpg 1x, ./img/realizacje/room1@2x.jpg 2x" type="image/jpeg" />
+									<!-- Менші версії для екранів до 768px -->
+									<source media="(max-width: 768px)" srcset="./img/realizacje/room1mobile@2x.webp 2x, ../../img/realizacje/room1mobile.webp 1x" type="image/webp" />
+									<source media="(max-width: 768px)" srcset="./img/realizacje/room1mobile@2x.jpg 2x, ../../img/realizacje/room1mobile.jpg 1x" type="image/jpeg" />
+
+									<!-- Більші версії для екранів більше 768px -->
+									<source srcset="./img/realizacje/room1@2x.webp 2x, ../../img/realizacje/room1.webp 1x" type="image/webp" />
+									<source srcset="./img/realizacje/room1@2x.jpg 2x, ../../img/realizacje/room1.jpg 1x" type="image/jpeg" />
+
+									<!-- Стандартне зображення як резервне -->
 									<img id="room1" class="relise__img relise__img--left" src="./img/realizacje/room1.jpg" alt="room" />
 								</picture>
+
 								<picture>
-									<source srcset="./img/realizacje/room2.webp 1x, ./img/realizacje/room2@2x.webp 2x" type="image/webp" />
-									<source srcset="./img/realizacje/room2.jpg 1x, ./img/realizacje/room2@2x.jpg 2x" type="image/jpeg" />
+									<!-- Менші версії для екранів до 768px -->
+									<source media="(max-width: 768px)" srcset="./img/realizacje/room2mobile@2x.webp 2x, ../../img/realizacje/room2mobile.webp 1x" type="image/webp" />
+									<source media="(max-width: 768px)" srcset="./img/realizacje/room2mobile@2x.jpg 2x, ../../img/realizacje/room2mobile.jpg 1x" type="image/jpeg" />
+
+									<!-- Більші версії для екранів більше 768px -->
+									<source srcset="./img/realizacje/room2@2x.webp 2x, ../../img/realizacje/room2.webp 1x" type="image/webp" />
+									<source srcset="./img/realizacje/room2@2x.jpg 2x, ../../img/realizacje/room2.jpg 1x" type="image/jpeg" />
+
+									<!-- Стандартне зображення як резервне -->
 									<img id="room2" class="relise__img relise__img--center" src="./img/realizacje/room2.jpg" alt="room" />
 								</picture>
+
 								<picture>
-									<source srcset="./img/realizacje/room3.webp 1x, ./img/realizacje/room3@2x.webp 2x" type="image/webp" />
-									<source srcset="./img/realizacje/room3.jpg 1x, ./img/realizacje/room3@2x.jpg 2x" type="image/jpeg" />
+									<!-- Менші версії для екранів до 768px -->
+									<source media="(max-width: 768px)" srcset="./img/realizacje/room3mobile@2x.webp 2x, ../../img/realizacje/room3mobile.webp 1x" type="image/webp" />
+									<source media="(max-width: 768px)" srcset="./img/realizacje/room3mobile@2x.jpg 2x, ../../img/realizacje/room3mobile.jpg 1x" type="image/jpeg" />
+
+									<!-- Більші версії для екранів більше 768px -->
+									<source srcset="./img/realizacje/room3@2x.webp 2x, ../../img/realizacje/room3.webp 1x" type="image/webp" />
+									<source srcset="./img/realizacje/room3@2x.jpg 2x, ../../img/realizacje/room3.jpg 1x" type="image/jpeg" />
+
+									<!-- Стандартне зображення як резервне -->
 									<img id="room3" class="relise__img relise__img--right" src="./img/realizacje/room3.jpg" alt="room" />
 								</picture>
 							</li>
+
 							<li class="relise__item">
 								<picture>
-									<source srcset="./img/realizacje/room4.webp 1x, ./img/realizacje/room4@2x.webp 2x" type="image/webp" />
-									<source srcset="./img/realizacje/room4.jpg 1x, ./img/realizacje/room4@2x.jpg 2x" type="image/jpeg" />
+									<!-- Менші версії для екранів до 768px -->
+									<source media="(max-width: 768px)" srcset="./img/realizacje/room4mobile@2x.webp 2x, ../../img/realizacje/room4mobile.webp 1x" type="image/webp" />
+									<source media="(max-width: 768px)" srcset="./img/realizacje/room4mobile@2x.jpg 2x, ../../img/realizacje/room4mobile.jpg 1x" type="image/jpeg" />
+
+									<!-- Більші версії для екранів більше 768px -->
+									<source srcset="./img/realizacje/room4@3x.webp 2x, ../../img/realizacje/room4.webp 1x" type="image/webp" />
+									<source srcset="./img/realizacje/room4@3x.jpg 2x, ../../img/realizacje/room4.jpg 1x" type="image/jpeg" />
+
+									<!-- Стандартне зображення як резервне -->
 									<img id="room4" class="relise__img relise__img--left" src="./img/realizacje/room4.jpg" alt="room" />
 								</picture>
+
 								<picture>
-									<source srcset="./img/realizacje/room5.webp 1x, ./img/realizacje/room5@2x.webp 2x" type="image/webp" />
-									<source srcset="./img/realizacje/room5.jpg 1x, ./img/realizacje/room5@2x.jpg 2x" type="image/jpeg" />
+									<!-- Менші версії для екранів до 768px -->
+									<source media="(max-width: 768px)" srcset="./img/realizacje/room5mobile@2x.webp 2x, ../../img/realizacje/room5mobile.webp 1x" type="image/webp" />
+									<source media="(max-width: 768px)" srcset="./img/realizacje/room5mobile@2x.jpg 2x, ../../img/realizacje/room5mobile.jpg 1x" type="image/jpeg" />
+
+									<!-- Більші версії для екранів більше 768px -->
+									<source srcset="./img/realizacje/room5@2x.webp 2x, ../../img/realizacje/room5.webp 1x" type="image/webp" />
+									<source srcset="./img/realizacje/room5@2x.jpg 2x, ../../img/realizacje/room5.jpg 1x" type="image/jpeg" />
+
+									<!-- Стандартне зображення як резервне -->
 									<img id="room5" class="relise__img relise__img--center" src="./img/realizacje/room5.jpg" alt="room" />
 								</picture>
+
 								<picture>
-									<source srcset="./img/realizacje/room6.webp 1x, ./img/realizacje/room6@2x.webp 2x" type="image/webp" />
-									<source srcset="./img/realizacje/room6.jpg 1x, ./img/realizacje/room6@2x.jpg 2x" type="image/jpeg" />
+									<!-- Менші версії для екранів до 768px -->
+									<source media="(max-width: 768px)" srcset="./img/realizacje/room6mobile@2x.webp 2x, ../../img/realizacje/room6mobile.webp 1x" type="image/webp" />
+									<source media="(max-width: 768px)" srcset="./img/realizacje/room6mobile@2x.jpg 2x, ../../img/realizacje/room6mobile.jpg 1x" type="image/jpeg" />
+
+									<!-- Більші версії для екранів більше 768px -->
+									<source srcset="./img/realizacje/room6@2x.webp 2x, ../../img/realizacje/room6.webp 1x" type="image/webp" />
+									<source srcset="./img/realizacje/room6@2x.jpg 2x, ../../img/realizacje/room6.jpg 1x" type="image/jpeg" />
+
+									<!-- Стандартне зображення як резервне -->
 									<img id="room6" class="relise__img relise__img--right" src="./img/realizacje/room6.jpg" alt="room" />
 								</picture>
 							</li>
 							<li class="relise__item">
 								<picture>
-									<source srcset="./img/realizacje/room7.webp 1x, ./img/realizacje/room7@2x.webp 2x" type="image/webp" />
-									<source srcset="./img/realizacje/room7.jpg 1x, ./img/realizacje/room7@2x.jpg 2x" type="image/jpeg" />
+									<!-- Менші версії для екранів до 768px -->
+									<source media="(max-width: 768px)" srcset="./img/realizacje/room7mobile@2x.webp 2x, ../../img/realizacje/room7mobile.webp 1x" type="image/webp" />
+									<source media="(max-width: 768px)" srcset="./img/realizacje/room7mobile@2x.jpg 2x, ../../img/realizacje/room7mobile.jpg 1x" type="image/jpeg" />
+
+									<!-- Більші версії для екранів більше 768px -->
+									<source srcset="./img/realizacje/room7@2x.webp 2x, ../../img/realizacje/room7.webp 1x" type="image/webp" />
+									<source srcset="./img/realizacje/room7@2x.jpg 2x, ../../img/realizacje/room7.jpg 1x" type="image/jpeg" />
+
+									<!-- Стандартне зображення як резервне -->
 									<img id="room7" class="relise__img relise__img--left" src="./img/realizacje/room7.jpg" alt="room" />
 								</picture>
+
 								<picture>
-									<source srcset="./img/realizacje/house1.webp 1x, ./img/realizacje/house1@2x.webp 2x" type="image/webp" />
-									<source srcset="./img/realizacje/house1.jpg 1x, ./img/realizacje/house1@2x.jpg 2x" type="image/jpeg" />
+									<!-- Менші версії для екранів до 768px -->
+									<source
+										media="(max-width: 768px)"
+										srcset="./img/realizacje/house1mobile@2x.webp 2x, ../../img/realizacje/house1mobile.webp 1x"
+										type="image/webp"
+									/>
+									<source media="(max-width: 768px)" srcset="./img/realizacje/house1mobile@2x.jpg 2x, ../../img/realizacje/house1mobile.jpg 1x" type="image/jpeg" />
+
+									<!-- Більші версії для екранів більше 768px -->
+									<source srcset="./img/realizacje/house1@2x.webp 2x, ../../img/realizacje/house1.webp 1x" type="image/webp" />
+									<source srcset="./img/realizacje/house1@2x.jpg 2x, ../../img/realizacje/house1.jpg 1x" type="image/jpeg" />
+
+									<!-- Стандартне зображення як резервне -->
 									<img id="house1" class="relise__img relise__img--center" src="./img/realizacje/house1.jpg" alt="room" />
 								</picture>
+
 								<picture>
-									<source srcset="./img/realizacje/house2.webp 1x, ./img/realizacje/house2@2x.webp 2x" type="image/webp" />
-									<source srcset="./img/realizacje/house2.jpg 1x, ./img/realizacje/house2@2x.jpg 2x" type="image/jpeg" />
+									<!-- Менші версії для екранів до 768px -->
+									<source
+										media="(max-width: 768px)"
+										srcset="./img/realizacje/house2mobile@2x.webp 2x, ../../img/realizacje/house2mobile.webp 1x"
+										type="image/webp"
+									/>
+									<source media="(max-width: 768px)" srcset="./img/realizacje/house2mobile@2x.jpg 2x, ../../img/realizacje/house2mobile.jpg 1x" type="image/jpeg" />
+
+									<!-- Більші версії для екранів більше 768px -->
+									<source srcset="./img/realizacje/house2@2x.webp 2x, ../../img/realizacje/house2.webp 1x" type="image/webp" />
+									<source srcset="./img/realizacje/house2@2x.jpg 2x, ../../img/realizacje/house2.jpg 1x" type="image/jpeg" />
+
+									<!-- Стандартне зображення як резервне -->
 									<img id="house2" class="relise__img relise__img--right" src="./img/realizacje/house2.jpg" alt="room" />
 								</picture>
 							</li>
 						</ul>
-
 						<ul class="relise__list--mini">
 							<li class="relise__item--mini">
-								<a href="#room1"
-									><picture>
-										<source srcset="./img/realizacje/mini/miniroom1.webp 1x, ./img/realizacje/mini/miniroom1@2x.webp 2x" type="image/webp" />
-										<source srcset="./img/realizacje/mini/miniroom1.jpg 1x, ./img/realizacje/mini/miniroom1@2x.jpg 2x" type="image/jpeg" />
-										<img class="relise__img-mini relise__img-mini--left" src="./img/realizacje/mini/miniroom1.jpg" alt="room" /> </picture
-								></a>
-								<a href="#room2"
-									><picture>
-										<source srcset="./img/realizacje/mini/miniroom2.webp 1x, ./img/realizacje/mini/miniroom2@2x.webp 2x" type="image/webp" />
-										<source srcset="./img/realizacje/mini/miniroom2.jpg 1x, ./img/realizacje/mini/miniroom2@2x.jpg 2x" type="image/jpeg" />
-										<img class="relise__img-mini relise__img-mini--center" src="./img/realizacje/mini/miniroom2.jpg" alt="room" /> </picture
-								></a>
-								<a href="#room3"
-									><picture>
-										<source srcset="./img/realizacje/mini/miniroom3.webp 1x, ./img/realizacje/mini/miniroom3@2x.webp 2x" type="image/webp" />
-										<source srcset="./img/realizacje/mini/miniroom3.jpg 1x, ./img/realizacje/mini/miniroom3@2x.jpg 2x" type="image/jpeg" />
-										<img class="relise__img-mini relise__img-mini--right" src="./img/realizacje/mini/miniroom3.jpg" alt="room" /> </picture
-								></a>
+								<a href="#room1">
+									<picture>
+										<!-- Менші версії для екранів до 768px -->
+										<source
+											media="(max-width: 768px)"
+											srcset="./img/realizacje/mini/miniroom1mobile@2x.webp 2x, ../../img/realizacje/mini/miniroom1mobile.webp 1x"
+											type="image/webp"
+										/>
+										<source
+											media="(max-width: 768px)"
+											srcset="./img/realizacje/mini/miniroom1mobile@2x.jpg 2x, ../../img/realizacje/mini/miniroom1mobile.jpg 1x"
+											type="image/jpeg"
+										/>
+
+										<!-- Більші версії для екранів більше 768px -->
+										<source srcset="./img/realizacje/mini/miniroom1@2x.webp 2x, ../../img/realizacje/mini/miniroom1.webp 1x" type="image/webp" />
+										<source srcset="./img/realizacje/mini/miniroom1@2x.jpg 2x, ../../img/realizacje/mini/miniroom1.jpg 1x" type="image/jpeg" />
+
+										<!-- Стандартне зображення як резервне -->
+										<img class="relise__img-mini relise__img-mini--left" src="./img/realizacje/mini/miniroom1.jpg" alt="room" />
+									</picture>
+								</a>
+
+								<a href="#room2">
+									<picture>
+										<!-- Менші версії для екранів до 768px -->
+										<source
+											media="(max-width: 768px)"
+											srcset="./img/realizacje/mini/miniroom2mobile@2x.webp 2x, ../../img/realizacje/mini/miniroom2mobile.webp 1x"
+											type="image/webp"
+										/>
+										<source
+											media="(max-width: 768px)"
+											srcset="./img/realizacje/mini/miniroom2mobile@2x.jpg 2x, ../../img/realizacje/mini/miniroom2mobile.jpg 1x"
+											type="image/jpeg"
+										/>
+
+										<!-- Більші версії для екранів більше 768px -->
+										<source srcset="./img/realizacje/mini/miniroom2@2x.webp 2x, ../../img/realizacje/mini/miniroom2.webp 1x" type="image/webp" />
+										<source srcset="./img/realizacje/mini/miniroom2@2x.jpg 2x, ../../img/realizacje/mini/miniroom2.jpg 1x" type="image/jpeg" />
+
+										<!-- Стандартне зображення як резервне -->
+										<img class="relise__img-mini relise__img-mini--center" src="./img/realizacje/mini/miniroom2.jpg" alt="room" />
+									</picture>
+								</a>
+
+								<a href="#room3">
+									<picture>
+										<!-- Менші версії для екранів до 768px -->
+										<source
+											media="(max-width: 768px)"
+											srcset="./img/realizacje/mini/miniroom3mobile@2x.webp 2x, ../../img/realizacje/mini/miniroom3mobile.webp 1x"
+											type="image/webp"
+										/>
+										<source
+											media="(max-width: 768px)"
+											srcset="./img/realizacje/mini/miniroom3mobile@2x.jpg 2x, ../../img/realizacje/mini/miniroom3mobile.jpg 1x"
+											type="image/jpeg"
+										/>
+
+										<!-- Більші версії для екранів більше 768px -->
+										<source srcset="./img/realizacje/mini/miniroom3@2x.webp 2x, ../../img/realizacje/mini/miniroom3.webp 1x" type="image/webp" />
+										<source srcset="./img/realizacje/mini/miniroom3@2x.jpg 2x, ../../img/realizacje/mini/miniroom3.jpg 1x" type="image/jpeg" />
+
+										<!-- Стандартне зображення як резервне -->
+										<img class="relise__img-mini relise__img-mini--center" src="./img/realizacje/mini/miniroom3.jpg" alt="room" />
+									</picture>
+								</a>
 							</li>
 							<li class="relise__item--mini">
-								<a href="#room4"
-									><picture>
-										<source srcset="./img/realizacje/mini/miniroom4.webp 1x, ./img/realizacje/mini/miniroom4@2x.webp 2x" type="image/webp" />
-										<source srcset="./img/realizacje/mini/miniroom4.jpg 1x, ./img/realizacje/mini/miniroom4@2x.jpg 2x" type="image/jpeg" />
-										<img class="relise__img-mini relise__img-mini--left" src="./img/realizacje/mini/miniroom4.jpg" alt="room" /> </picture
-								></a>
-								<a href="#room5"
-									><picture>
-										<source srcset="./img/realizacje/mini/miniroom5.webp 1x, ./img/realizacje/mini/miniroom5@2x.webp 2x" type="image/webp" />
-										<source srcset="./img/realizacje/mini/miniroom5.jpg 1x, ./img/realizacje/mini/miniroom5@2x.jpg 2x" type="image/jpeg" />
-										<img class="relise__img-mini relise__img-mini--center" src="./img/realizacje/mini/miniroom5.jpg" alt="room" /> </picture
-								></a>
-								<a href="#room6"
-									><picture>
-										<source srcset="./img/realizacje/mini/miniroom6.webp 1x, ./img/realizacje/mini/miniroom6@2x.webp 2x" type="image/webp" />
-										<source srcset="./img/realizacje/mini/miniroom6.jpg 1x, ./img/realizacje/mini/miniroom6@2x.jpg 2x" type="image/jpeg" />
-										<img class="relise__img-mini relise__img-mini--right" src="./img/realizacje/mini/miniroom6.jpg" alt="room" /> </picture
-								></a>
+								<a href="#room4">
+									<picture>
+										<!-- Менші версії для екранів до 768px -->
+										<source
+											media="(max-width: 768px)"
+											srcset="./img/realizacje/mini/miniroom4mobile@2x.webp 2x, ../../img/realizacje/mini/miniroom4mobile.webp 1x"
+											type="image/webp"
+										/>
+										<source
+											media="(max-width: 768px)"
+											srcset="./img/realizacje/mini/miniroom4mobile@2x.jpg 2x, ../../img/realizacje/mini/miniroom4mobile.jpg 1x"
+											type="image/jpeg"
+										/>
+
+										<!-- Більші версії для екранів більше 768px -->
+										<source srcset="./img/realizacje/mini/miniroom4@2x.webp 2x, ../../img/realizacje/mini/miniroom4.webp 1x" type="image/webp" />
+										<source srcset="./img/realizacje/mini/miniroom4@2x.jpg 2x, ../../img/realizacje/mini/miniroom4.jpg 1x" type="image/jpeg" />
+
+										<!-- Стандартне зображення як резервне -->
+										<img class="relise__img-mini relise__img-mini--left" src="./img/realizacje/mini/miniroom4.jpg" alt="room" />
+									</picture>
+								</a>
+								<a href="#room5">
+									<picture>
+										<!-- Менші версії для екранів до 768px -->
+										<source
+											media="(max-width: 768px)"
+											srcset="./img/realizacje/mini/miniroom5mobile@2x.webp 2x, ../../img/realizacje/mini/miniroom5mobile.webp 1x"
+											type="image/webp"
+										/>
+										<source
+											media="(max-width: 768px)"
+											srcset="./img/realizacje/mini/miniroom5mobile@2x.jpg 2x, ../../img/realizacje/mini/miniroom5mobile.jpg 1x"
+											type="image/jpeg"
+										/>
+
+										<!-- Більші версії для екранів більше 768px -->
+										<source srcset="./img/realizacje/mini/miniroom5@2x.webp 2x, ../../img/realizacje/mini/miniroom5.webp 1x" type="image/webp" />
+										<source srcset="./img/realizacje/mini/miniroom5@2x.jpg 2x, ../../img/realizacje/mini/miniroom5.jpg 1x" type="image/jpeg" />
+
+										<!-- Стандартне зображення як резервне -->
+										<img class="relise__img-mini relise__img-mini--center" src="./img/realizacje/mini/miniroom5.jpg" alt="room" />
+									</picture>
+								</a>
+								<a href="#room6">
+									<picture>
+										<!-- Менші версії для екранів до 768px -->
+										<source
+											media="(max-width: 768px)"
+											srcset="./img/realizacje/mini/miniroom6mobile@2x.webp 2x, ../../img/realizacje/mini/miniroom6mobile.webp 1x"
+											type="image/webp"
+										/>
+										<source
+											media="(max-width: 768px)"
+											srcset="./img/realizacje/mini/miniroom6mobile@2x.jpg 2x, ../../img/realizacje/mini/miniroom6mobile.jpg 1x"
+											type="image/jpeg"
+										/>
+
+										<!-- Більші версії для екранів більше 768px -->
+										<source srcset="./img/realizacje/mini/miniroom6@2x.webp 2x, ../../img/realizacje/mini/miniroom6.webp 1x" type="image/webp" />
+										<source srcset="./img/realizacje/mini/miniroom6@2x.jpg 2x, ../../img/realizacje/mini/miniroom6.jpg 1x" type="image/jpeg" />
+
+										<!-- Стандартне зображення як резервне -->
+										<img class="relise__img-mini relise__img-mini--right" src="./img/realizacje/mini/miniroom6.jpg" alt="room" />
+									</picture>
+								</a>
 							</li>
 							<li class="relise__item--mini">
-								<a href="#room7"
-									><picture>
-										<source srcset="./img/realizacje/mini/miniroom7.webp 1x, ./img/realizacje/mini/miniroom7@2x.webp 2x" type="image/webp" />
-										<source srcset="./img/realizacje/mini/miniroom7.jpg 1x, ./img/realizacje/mini/miniroom7@2x.jpg 2x" type="image/jpeg" />
-										<img class="relise__img-mini relise__img-mini--left" src="./img/realizacje/mini/miniroom7.jpg" alt="room" /> </picture
-								></a>
-								<a href="#house1"
-									><picture>
-										<source srcset="./img/realizacje/mini/minihouse1.webp 1x, ./img/realizacje/mini/minihouse1@2x.webp 2x" type="image/webp" />
-										<source srcset="./img/realizacje/mini/minihouse1.jpg 1x, ./img/realizacje/mini/minihouse1@2x.jpg 2x" type="image/jpeg" />
-										<img class="relise__img-mini relise__img-mini--center" src="./img/realizacje/mini/minihouse1.jpg" alt="room" /> </picture
-								></a>
-								<a href="#house2"
-									><picture>
-										<source srcset="./img/realizacje/mini/minihouse2.webp 1x, ./img/realizacje/mini/minihouse2@2x.webp 2x" type="image/webp" />
-										<source srcset="./img/realizacje/mini/minihouse2.jpg 1x, ./img/realizacje/mini/minihouse2@2x.jpg 2x" type="image/jpeg" />
-										<img class="relise__img-mini relise__img-mini--right" src="./img/realizacje/mini/minihouse2.jpg" alt="room" /> </picture
-								></a>
+								<a href="#room7">
+									<picture>
+										<!-- Менші версії для екранів до 768px -->
+										<source
+											media="(max-width: 768px)"
+											srcset="./img/realizacje/mini/miniroom7mobile@2x.webp 2x, ../../img/realizacje/mini/miniroom7mobile.webp 1x"
+											type="image/webp"
+										/>
+										<source
+											media="(max-width: 768px)"
+											srcset="./img/realizacje/mini/miniroom7mobile@2x.jpg 2x, ../../img/realizacje/mini/miniroom7mobile.jpg 1x"
+											type="image/jpeg"
+										/>
+
+										<!-- Більші версії для екранів більше 768px -->
+										<source srcset="./img/realizacje/mini/miniroom7@2x.webp 2x, ../../img/realizacje/mini/miniroom7.webp 1x" type="image/webp" />
+										<source srcset="./img/realizacje/mini/miniroom7@2x.jpg 2x, ../../img/realizacje/mini/miniroom7.jpg 1x" type="image/jpeg" />
+
+										<!-- Стандартне зображення як резервне -->
+										<img class="relise__img-mini relise__img-mini--left" src="./img/realizacje/mini/miniroom7.jpg" alt="room" />
+									</picture>
+								</a>
+
+								<a href="#house1">
+									<picture>
+										<!-- Менші версії для екранів до 768px -->
+										<source
+											media="(max-width: 768px)"
+											srcset="./img/realizacje/mini/minihouse1mobile@2x.webp 2x, ../../img/realizacje/mini/minihouse1mobile.webp 1x"
+											type="image/webp"
+										/>
+										<source
+											media="(max-width: 768px)"
+											srcset="./img/realizacje/mini/minihouse1mobile@2x.jpg 2x, ../../img/realizacje/mini/minihouse1mobile.jpg 1x"
+											type="image/jpeg"
+										/>
+
+										<!-- Більші версії для екранів більше 768px -->
+										<source srcset="./img/realizacje/mini/minihouse1@2x.webp 2x, ../../img/realizacje/mini/minihouse1.webp 1x" type="image/webp" />
+										<source srcset="./img/realizacje/mini/minihouse1@2x.jpg 2x, ../../img/realizacje/mini/minihouse1.jpg 1x" type="image/jpeg" />
+
+										<!-- Стандартне зображення як резервне -->
+										<img class="relise__img-mini relise__img-mini--center" src="./img/realizacje/mini/minihouse1.jpg" alt="room" />
+									</picture>
+								</a>
+
+								<a href="#house2">
+									<picture>
+										<!-- Менші версії для екранів до 768px -->
+										<source
+											media="(max-width: 768px)"
+											srcset="./img/realizacje/mini/minihouse2mobile@2x.webp 2x, ../../img/realizacje/mini/minihouse2mobile.webp 1x"
+											type="image/webp"
+										/>
+										<source
+											media="(max-width: 768px)"
+											srcset="./img/realizacje/mini/minihouse2mobile@2x.jpg 2x, ../../img/realizacje/mini/minihouse2mobile.jpg 1x"
+											type="image/jpeg"
+										/>
+
+										<!-- Більші версії для екранів більше 768px -->
+										<source srcset="./img/realizacje/mini/minihouse2@2x.webp 2x, ../../img/realizacje/mini/minihouse2.webp 1x" type="image/webp" />
+										<source srcset="./img/realizacje/mini/minihouse2@2x.jpg 2x, ../../img/realizacje/mini/minihouse2.jpg 1x" type="image/jpeg" />
+
+										<!-- Стандартне зображення як резервне -->
+										<img class="relise__img-mini relise__img-mini--center" src="./img/realizacje/mini/minihouse2.jpg" alt="room" />
+									</picture>
+								</a>
 							</li>
 						</ul>
 					</div>
