@@ -16,6 +16,19 @@
 // mobile
 
 
+#card1{
+    --index: 1;
+    
+}
+
+#card2{
+    --index: 2;
+}
+
+#card3{
+    --index: 3;
+}
+
 
 .opinions__mobilecontainer {
     display: flex;
@@ -32,10 +45,14 @@
 }
 
 .opinions__card{
-    position: relative;
+    position: sticky;
+    top: 24px;
+    // margin-bottom: -80%; /* Ensures each new card starts overlapping the previous */
+    z-index: 1;
     width: 310px;
     height: 415px;
     padding: 34px;
+    // padding-top: calc(var((--index)) + 1.5rem);
     margin-bottom: 32px;
     display: flex;
     flex-direction: column;
@@ -44,9 +61,12 @@
     border: solid 1px var(--title-color);
     border-radius: 10px;
 
+    transition: transform 0.3s ease;
+
     &-yellow{
         background-color: var(--accent);
     }
+
     
 
     .corner {
@@ -89,6 +109,8 @@
    
 }
 
+
+
 .opinions__mobilecontainer:nth-child(1) .opinions__card{
     background-color: var(--accent);
     border: none;
@@ -104,6 +126,28 @@
     transition: transform 0.1s ease, opacity 0.1s ease;
     }
 }
+
+
+
+
+// .opinions__card.stacked {
+//     opacity: 1;
+//     transform: translateY(0);
+// }
+
+// .opinions__mobilecontainer .opinions__card:nth-child(1) {
+//     z-index: 3;
+// }
+
+// .opinions__mobilecontainer .opinions__card:nth-child(2) {
+//     z-index: 2;
+//     transform: translateY(-20%) scale(0.9);
+// }
+
+// .opinions__mobilecontainer .opinions__card:nth-child(3) {
+//     z-index: 1;
+//     transform: translateY(-40%) scale(0.8);
+// }
 
 
 .opinions__text{

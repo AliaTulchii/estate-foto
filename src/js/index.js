@@ -31,3 +31,5 @@ requiredInput()
 import contactAnimation from './modules/contactAnimation.js';
 contactAnimation();
 
+// import mobileOpninions from './modules/mobileopinions.js';
+// mobileOpninions();
