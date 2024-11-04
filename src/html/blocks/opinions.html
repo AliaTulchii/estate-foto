@@ -3,12 +3,90 @@
         <h2 class="opinions__title">Opinie</h2>
         
             <div class="swiper-container">
-                <div class="swiper-wrapper">
-                    
+                <div class="swiper-wrapper">                    
                         @@loop('card/card.html', './data/cards.json');
+                    </div>               
+            </div>
+
+            <ul class="opinions__mobilecontainer">
+                <li class="opinions__card opinions__card-yellow">
+                    <div class="corner top-left"></div>
+                    <div class="corner top-right"></div>
+                    <div class="corner bottom-left"></div>
+                    <div class="corner bottom-right"></div>
+                    <h3 class="card__title">Magdalena Sadoska</h3>
+                
+                    <div>
+                        <p class="opinions__text">
+                            Polecam, zdjęcia obłędne. <br/>
+                            Pokazujące wnętrze, jakby człowiek był w środku. 
+                            Fotograf naprawde znający się na tym co robi - dostałam 
+                            zdjęcia w kolejności, tak, aby dodać je tylko do ogłoszenia.
+                        </p>
+                    
+                        <div class="opinionsbtn__container opinionsbtn__container-yellow">
+                        <a class="opinionsbtn" target="_blank" href="https://www.google.com/maps/place/CześćFOTO+-+fotografia+nieruchomości+i+wnętrz,+Stefana+Żeromskiego+1,+01-887+Warszawa/data=!4m2!3m1!1s0x471eb7d2f8e1c885:0x231f9d283612d856?utm_source=mstt_1&entry=gps&coh=192189&g_ep=CAESCjExLjE0OC4xMDUYACDXggMqfiw5NDIzMTc5Niw5NDI0MjU4Myw5NDIyMzI5OSw5NDIxNjQxMyw5NDIxMjQ5Niw5NDIwNzM5NCw5NDIwNzUwNiw5NDIwODUwNiw5NDIxNzUyMyw5NDIxODY1Myw5NDIyOTgzOSw0NzA4NzExOCw0NzA4NDM5Myw5NDIxMzIwMEICUEw%3D">
+                        Zobacz opinie w Google
+                        
+                        </a>
+                        <span class="opinionsbtn__icon">
+                           <img src="../../img/opinions/camera-yellow.png" alt="camera">
+                        </span>
+                        </div>
                     </div>
                     
                 
-            </div>
+                </li>
+                
+                <li class="opinions__card ">
+                    <div class="corner top-left"></div>
+                    <div class="corner top-right"></div>
+                    <div class="corner bottom-left"></div>
+                    <div class="corner bottom-right"></div>
+                    <h3 class="card__title">David Konop</h3>
+                
+                    <div>
+                        <p class="opinions__text">
+                            Aby każdy w tych czasach w  swojej dziedzinie  był tak terminowy ,słowny,rzeczowy i zaangażowany  w swojej pracy .Gotowe zdjęcia dostałem następnego dnia na wieczór i wyszły one bezbłędnie . <br/> <br/> Serdecznie polecam.
+                        </p>
+                    
+                        <div class="opinionsbtn__container">
+                        <a class="opinionsbtn" target="_blank" href="https://www.google.com/maps/place/CześćFOTO+-+fotografia+nieruchomości+i+wnętrz,+Stefana+Żeromskiego+1,+01-887+Warszawa/data=!4m2!3m1!1s0x471eb7d2f8e1c885:0x231f9d283612d856?utm_source=mstt_1&entry=gps&coh=192189&g_ep=CAESCjExLjE0OC4xMDUYACDXggMqfiw5NDIzMTc5Niw5NDI0MjU4Myw5NDIyMzI5OSw5NDIxNjQxMyw5NDIxMjQ5Niw5NDIwNzM5NCw5NDIwNzUwNiw5NDIwODUwNiw5NDIxNzUyMyw5NDIxODY1Myw5NDIyOTgzOSw0NzA4NzExOCw0NzA4NDM5Myw5NDIxMzIwMEICUEw%3D">
+                        Zobacz opinie w Google                        
+                        </a>
+                        <span class="opinionsbtn__icon">
+                           <img src="../../img/opinions/camera-white.png" alt="camera">
+                        </span>
+                        </div>
+                    </div>               
+                </li>
+
+                <li class="opinions__card">
+                    <div class="corner top-left"></div>
+                    <div class="corner top-right"></div>
+                    <div class="corner bottom-left"></div>
+                    <div class="corner bottom-right"></div>
+                    <h3 class="card__title">Kamil Kołodyński</h3>
+                
+                    <div>
+                        <p class="opinions__text">
+                            Zdjecia wyszły lepiej niż oczekiwałem.
+                        </p>
+                    
+                        <div class="opinionsbtn__container ">
+                        <a class="opinionsbtn opinionsbtn--yellow" target="_blank" href="https://www.google.com/maps/place/CześćFOTO+-+fotografia+nieruchomości+i+wnętrz,+Stefana+Żeromskiego+1,+01-887+Warszawa/data=!4m2!3m1!1s0x471eb7d2f8e1c885:0x231f9d283612d856?utm_source=mstt_1&entry=gps&coh=192189&g_ep=CAESCjExLjE0OC4xMDUYACDXggMqfiw5NDIzMTc5Niw5NDI0MjU4Myw5NDIyMzI5OSw5NDIxNjQxMyw5NDIxMjQ5Niw5NDIwNzM5NCw5NDIwNzUwNiw5NDIwODUwNiw5NDIxNzUyMyw5NDIxODY1Myw5NDIyOTgzOSw0NzA4NzExOCw0NzA4NDM5Myw5NDIxMzIwMEICUEw%3D">
+                        Zobacz opinie w Google
+                        
+                        </a>
+                        <span class="opinionsbtn__icon">
+                           <img src='../../img/opinions/camera-white.png' alt="camera">
+                        </span>
+                        </div>
+                    </div>
+                    
+                
+                </li>
+
+            </ul>
     </div>
 </section>

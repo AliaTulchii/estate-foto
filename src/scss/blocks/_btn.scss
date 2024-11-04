@@ -47,7 +47,8 @@
 
 }
 
-.cardbtn__container{
+.cardbtn__container,
+.opinionsbtn__container{
     width: 270px;
     // padding: 12px 20px;
     display: flex;
@@ -68,7 +69,8 @@
     }
 }
 
-.cardbtn__container-yellow{
+.cardbtn__container-yellow,
+.opinionsbtn__container-yellow{
     width: 270px;
     // padding: 12px 20px;
     display: flex;
@@ -89,13 +91,15 @@
     }
 }
 
-.cardbtn__container:hover .cardbtn{
+.cardbtn__container:hover .cardbtn,
+.opinionsbtn__container:hover .opinionsbtn{
         border: none;
     color: var(--page-bg);
     transition: color 0.1s ease-in-out;
 }
 
-.cardbtn{
+.cardbtn,
+.opinionsbtn{
     padding: 12.5px 0px ;
     background-color: transparent;
     border-radius: 20px;
@@ -115,7 +119,8 @@
     // }
 }
 
-.cardbtn__icon{
+.cardbtn__icon,
+.opinionsbtn__icon{
 position: relative;
     background-color: transparent;
     border-radius: 50%;
@@ -130,6 +135,13 @@ position: relative;
 
 .cardbtn__container:hover .cardbtn__icon,
 .cardbtn__container-yellow:hover .cardbtn__icon    {
+    opacity: 1; /* Показує іконку при наведенні */
+    transform: translateX(115px); /* Вирівнює іконку */
+
+}
+
+.opinionsbtn__container:hover .opinionsbtn__icon,
+.opinionsbtn__container-yellow:hover .opinionsbtn__icon    {
     opacity: 1; /* Показує іконку при наведенні */
     transform: translateX(115px); /* Вирівнює іконку */
 
