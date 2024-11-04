@@ -28,13 +28,14 @@
 }
 
 .services__title{
-	margin: 0 16px 85px;
+	margin: 0 auto 85px;
 	width: 1162px;
 	font-size: 48px;
 	font-weight: 700;
 	font-family: var(--font-titles);
 	line-height: 1.17;
 	color: var(--title-color);
+	text-align: center;
 
 	@media screen and (max-width: 768px){
 		margin: 0 auto 48px;
@@ -42,6 +43,7 @@
 		font-size: 22px;
 		font-weight: 700;
 		line-height: 1.27;
+		text-align: start;
 	}
 		
 	@media screen and (min-width: 769px) and (max-width: 1199px){

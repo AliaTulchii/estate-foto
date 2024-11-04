@@ -26,8 +26,8 @@
 
 
 .pricecard__item{
-    width: 443px;
-    height: 526px;
+    max-width: 430px;
+    height: 510px;
     padding: 1px;
 
     @media screen and (max-width:768px){
@@ -58,6 +58,7 @@
 }
 
 .pricecard__wrapper{
+    // width: 472px;
     height: 100%;
     position: relative;
     padding: 53px 32px;
@@ -69,8 +70,8 @@
    
 
     &:hover{
-        width: 441px;
-    padding: 53px 31px;
+        width: 100%;
+    // padding: 53px 31px;
         border-radius: 10px;
         background-color: var(--accent);
         transition:  background-color 0.5s ease-in-out;
@@ -159,4 +160,10 @@
         font-size: 16px;
         line-height: 1.4;
     }
+}
+
+.pricecard__img{
+
+    width: 392px;
+    width: 392px;
 }
