@@ -40,8 +40,8 @@
 }
 
 .mobilenav__tel{
-	height: 44px;
-	padding: 8px 16px;
+	// height: 44px;
+	padding: 10px 16px;
 	border: solid 1px var(--border-color);
 	border-radius: 20px;
 	font-size: 14px;
@@ -88,8 +88,18 @@
 	right: 25px;
 	width: 23px;
 	height: 24px;
-	z-index: 20;
+	
+
+	&.icon-camera{
+      display: inline;
+	}
+
+	&.icon-close{
+		display: none;
+	}
 }
+
+
 
 .mobile-nav {
 	position: fixed;
