@@ -18,6 +18,14 @@ img {
 	display: block;
 }
 
+main {
+    padding-top: 79px; 
+	@media screen and (max-width: 768px) {
+		padding-top: 76px; 
+	}
+    
+}
+
 a {
 	text-decoration: none; 
     color: inherit;

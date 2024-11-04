@@ -1,10 +1,13 @@
 
 .header {
-	background-color: transparent;
+	width: 100%;
 	padding: 16px 0;
-	position: relative;
+	position: fixed;
+	top: 0;
+	left: 0;
 	z-index: 200;
 	background-color: var(--page-bg);
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .header__nav {

@@ -8,7 +8,8 @@
     justify-content: center;
     text-align: center;
     overflow: hidden;
-    background-image: url('../../img/hero/home.jpg'); /* Скетч фото */
+    background-image: url('../../img/hero/home.jpg'); 
+    
     background-size: cover;
     background-position: center;
     // filter: grayscale(100%);
@@ -26,11 +27,23 @@
     left: 100%; /* Виходить з правої частини */
     width: 100%;
     height: 100%;
-    background-image: url('../../img/hero/photo.jpg'); /* Друге зображення */
+    background-image:url('../../img/hero/photo.jpg'); /* Друге зображення */
     background-size: cover;
     background-position: center;
     opacity: 0; /* Початкова непрозорість */
     transition: opacity 1s ease-in-out, top 2s ease-in-out, left 2s ease-in-out; /* Додаємо анімацію для top і left */
+}
+
+.hero__shadow{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.208), rgba(0, 0, 0, 0.018),);
+    z-index: 2;
 }
 
 
@@ -43,7 +56,7 @@
     align-items: center;
     height: 100%;
     border-radius: 15px;
-    z-index: 2;
+    z-index: 4;
 
     
 }
@@ -51,7 +64,7 @@
 
 
 .hero.animated {
-    background-image: url('../../img/hero/photo.jpg'); /* Кольорове фото, як фон */
+    background-image: linear-gradient(rgba(36, 36, 36, 0.4), rgba(36, 36, 38, 0.4)),  url('../../img/hero/photo.jpg'); /* Кольорове фото, як фон */
 }
 
 

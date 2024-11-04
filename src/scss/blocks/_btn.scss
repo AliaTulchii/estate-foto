@@ -119,8 +119,7 @@
     // }
 }
 
-.cardbtn__icon,
-.opinionsbtn__icon{
+.cardbtn__icon{
 position: relative;
     background-color: transparent;
     border-radius: 50%;
@@ -140,9 +139,9 @@ position: relative;
 
 }
 
-.opinionsbtn__container:hover .opinionsbtn__icon,
-.opinionsbtn__container-yellow:hover .opinionsbtn__icon    {
-    opacity: 1; /* Показує іконку при наведенні */
-    transform: translateX(115px); /* Вирівнює іконку */
+// .opinionsbtn__container:hover .opinionsbtn__icon,
+// .opinionsbtn__container-yellow:hover .opinionsbtn__icon    {
+//     opacity: 1; /* Показує іконку при наведенні */
+//     transform: translateX(115px); /* Вирівнює іконку */
 
-}
+// }
