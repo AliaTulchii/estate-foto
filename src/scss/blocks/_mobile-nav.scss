@@ -13,6 +13,26 @@
 	}
 }
 
+.mobile-nav__backdrop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* напівпрозорий чорний фон */
+    backdrop-filter: blur(10px); /* рівень розмиття */
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease;
+    z-index: 98; /* нижче рівня меню */
+}
+
+/* Активний стан для розмиття */
+.mobile-nav__backdrop--active {
+    opacity: 1;
+    visibility: visible;
+}
+
 .mobile-nav__rightside{
 	display: flex;
 	align-items: center;
@@ -54,14 +74,21 @@
 }
 
 .mobilenav-icon{
+	width: 43px;
+	height: 43px;
 	background-color: var(--accent);
 	border-radius: 50%;
 	padding: 9px 10px;
 }
 
+	
 .mobilenav-img{
-	width: 24px;
+	position: absolute;
+	top: 26px;
+	right: 25px;
+	width: 23px;
 	height: 24px;
+	z-index: 20;
 }
 
 .mobile-nav {
@@ -89,11 +116,12 @@
 
 
 .mobile-nav--open {
-	top: 76px;
+	top: 98px;
 }
 
 .mobile-nav a {
 	color: var();
+	
 }
 
 .mobile-nav__container{
