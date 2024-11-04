@@ -7,6 +7,7 @@ function heroAnimation() {
 
     document.addEventListener("DOMContentLoaded", function() {
         const hero = document.querySelector(".hero");
+        const heroTitle = document.querySelector(".hero__title");
         
         // Затримка перед зміною фону
         setTimeout(() => {
@@ -26,7 +27,9 @@ function heroAnimation() {
             
             // Анімація появи нового фону
             setTimeout(() => {
-                newBackground.style.opacity = 1; // Змінюємо непрозорість на 1
+                newBackground.style.opacity = 1;
+                heroTitle.style.transition = "color 3s ease-in-out"; // Add smooth color transition
+                heroTitle.style.color = "var(--page-bg)";
             }, 50); // Невелика затримка для активації анімації
         }, 200); // 1000 мс = 1 секунда затримки перед зміною фону
     });

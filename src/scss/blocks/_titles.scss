@@ -8,6 +8,7 @@
 	text-align: center;
 	color: var(--title-color);
 	text-transform: uppercase;
+	transition: color 3s ease-in-out;
 
 	@media screen and (max-width: 768px){
 		width: 360px;
