@@ -31,11 +31,15 @@
 	margin: 0 auto 85px;
 	width: 1162px;
 	font-size: 48px;
-	font-weight: 700;
+	font-weight: 500;
 	font-family: var(--font-titles);
 	line-height: 1.17;
 	color: var(--title-color);
 	text-align: center;
+
+	&--bold{
+	font-weight: 700;
+	}
 
 	@media screen and (max-width: 768px){
 		margin: 0 auto 48px;
