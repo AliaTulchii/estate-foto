@@ -51,15 +51,15 @@
 
 .cookies__uppart{
     display: flex;
-    justify-content: space-between;
-    align-items: baseline;
+    justify-content: center;
+    align-items: center;
 }
 
 .cookies__btnclose{
     width: 12px;
-    // position: absolute;
-    // top: 32px;
-    // right: 32px;
+    position: absolute;
+    top: 9%;
+    right: 5%;
 
     @media screen and (max-width: 920px){
         width: 10px;
