@@ -1,6 +1,6 @@
 .cookies{
     position: fixed;
-    top: 71%;
+    top: 65%;
     right: 16px;
     width: 420px;
     padding:20px 28px;
@@ -11,6 +11,7 @@
     text-align: center;
     background-color: var(--page-bg);
     border-radius: 20px;
+    border: solid 1px var(--border-color);
     z-index: 1000;
     transition: transform 0.5s ease;
 
