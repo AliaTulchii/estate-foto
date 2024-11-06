@@ -83,6 +83,31 @@
 
 		<main class="main">
 			<div class="mobile-nav__backdrop"></div>
+
+			<section id="cookieBanner" class="cookies">
+				<div class="cookies__uppart">
+					<div></div>
+					<h2 class="cookies__title">Zarządzaj zgodami plik&#243;w cookie</h2>
+					<button class="cookies__btnclose" onclick="closeCookieBanner()">
+						<picture>
+							<source srcset="./img/cookies/close_small.webp 1x, ./img/cookies/close_small@2x.webp 2x" type="image/webp" />
+							<source srcset="./img/cookies/close_small.png 1x, ./img/cookies/close_small@2x.png 2x" type="image/png" />
+							<img src="./img/cookies/close_small.png" alt="" />
+						</picture>
+					</button>
+				</div>
+
+				<p class="cookies__text">
+					Używamy plik&#243;w cookie i&#160;podobnych technologii, kt&#243;re umożliwiają działanie usług i&#160;funkcjonalności w&#160;naszej witrynie oraz pomagają nam
+					zrozumieć interakcje z&#160;naszymi usługami. Klikając przycisk Akceptuj, zgadzasz się na&#160;stosowanie przez nas tych technologii w&#160;celach marketingowych
+					i&#160;analitycznych.
+				</p>
+				<a href="../privatePolicy.html" class="cookies__link">Polityka prywatności</a>
+				<div class="cookies__btns">
+					<button class="cookies__btn cookies__btn--yellow" onclick="acceptCookies()">Akceptuję</button>
+					<button class="cookies__btn" onclick="rejectCookies()">Odm&#243;w</button>
+				</div>
+			</section>
 			<section class="hero" id="colorSection">
 				<div class="hero__shadow">
 					<div class="container ">
@@ -837,7 +862,8 @@
 										<div>
 											<h2 class="pricecard__title">Pakiet do&#160;20 zdęć</h2>
 											<p class="pricecard__text">
-												wyselekcjonowane, gotowe w&#160;48 h, dostarczone elektronicznie
+												wyselekcjonowane, gotowe w&#160;48 h,<br />
+												dostarczone elektronicznie
 											</p>
 											<p class="pricecard__price">650 zł</p>
 											<p class="pricecard__subtext">
@@ -874,7 +900,8 @@
 										<div>
 											<h2 class="pricecard__title">Pakiet do&#160;30 zdęć</h2>
 											<p class="pricecard__text">
-												wyselekcjonowane, gotowe w&#160;48 h, dostarczone elektronicznie
+												wyselekcjonowane, gotowe w&#160;48 h,<br />
+												dostarczone elektronicznie
 											</p>
 											<p class="pricecard__price">800 zł</p>
 											<p class="pricecard__subtext">
@@ -903,20 +930,26 @@
 							<h2 class="contact__title">
 								Kontakt
 							</h2>
-							<h3 class="contact__subtitle">Masz pytania? Zadzwoń do&#160;nas: <a href="tel:+48664502750">+48 664 502 750 </a></h3>
+							<h3 class="contact__subtitle">
+								Masz pytania? Zadzwoń do&#160;nas: <a href="tel:+48664502750">+48 664 502 750 </a>
+								<br />
+								lub napisz chcezdjecia@estatefoto.pl
+							</h3>
 							<p class="contact__text">
 								Jesteś gotowy, aby wyr&#243;żnić swoją nieruchomość? Skontaktuj się z&#160;nami i&#160;zarezerwuj sesję zdjęciową już dziś! Otrzymasz od&#160;nas
 								gotowe materiały w wysokiej rozdzielczości, gotowe do&#160;publikacji na portalach sprzedażowych, w&#160;katalogach lub na&#160;stronach
 								internetowych&#160;&#8212; to&#160;wszystko już w&#160;48 h&#160;od&#160;wykonanej sesji zdjęciowej.
 							</p>
 						</div>
-						<form action="https://api.web3forms.com/submit" method="POST" class="contact__form">
+						<form action="https://api.web3forms.com/submit" method="POST" class="contact__form" id="contactForm">
 							<input type="hidden" name="access_key" value="47a01511-e719-4634-9998-a8f73ed03c55" />
 							<input class="contact__input contact__input--name" name="Imię" type="text" id="name" placeholder="Imię" required />
+
 							<div class="input__wrapper">
 								<input class="contact__input" type="email" name="email" id="email" placeholder="Email" required />
 								<input class="contact__input" type="tel" name="Numer telefonu" id="tel" placeholder="Numer telefonu" required />
 							</div>
+
 							<textarea class="contact__textarea" name="Wiadomość" id="message" rows="5" placeholder="Treść wiadomości" required></textarea>
 							<button class="contact__btn" type="submit">
 								Wyślij wiadomość
@@ -960,5 +993,8 @@
 		</footer>
 
 		<script src="./js/index.bundle.js"></script>
+		<!-- <script>
+        cookies(); // Виклик функції cookies
+    </script> -->
 	</body>
 </html>

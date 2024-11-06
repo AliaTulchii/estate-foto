@@ -10,13 +10,17 @@ Fancybox.bind('[data-fancybox]', {
 import mobileNav from './modules/mobile-nav.js';
 mobileNav();
 
-import heroAnimation from './modules/animation.js';
+import cookies from './modules/cookies.js';
+cookies();
+
+
+import heroAnimation from './modules/heroAnimation.js';
 heroAnimation();
 
-import scrollImg from './modules/scrollImg.js';
+import scrollImg from './modules/lensAnimation.js';
 scrollImg()
 
-import scroll from './modules/scroll.js';
+import scroll from './modules/swiperOpinions.js';
 scroll();
 
 import reliseScroll from './modules/relise/reliseScroll.js';
@@ -31,5 +35,7 @@ requiredInput()
 import contactAnimation from './modules/contactAnimation.js';
 contactAnimation();
 
-// import mobileOpninions from './modules/mobileopinions.js';
-// mobileOpninions();
+import formValidation from './modules/formValidation.js';
+formValidation();
+
+

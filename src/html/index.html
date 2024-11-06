@@ -10,12 +10,15 @@
 
 	<link rel="icon" type="image/x-icon" href="./img/logo/logo.png">
 	<link rel="apple-touch-icon" sizes="180x180" href="./img/favicons/logo.png">
+
 </head>
 
 <body>
 	@@include('blocks/header.html')
 	<main class="main">
 		<div class="mobile-nav__backdrop"></div>
+		
+		@@include('blocks/cookiesPopup.html')
 	@@include('blocks/hero.html')	
 	@@include('blocks/services.html')		
 	@@include('blocks/relise.html')		
@@ -25,7 +28,13 @@
 	</main>
 	@@include('blocks/footer.html')
 	
+
+
+		
 	<script src="./js/index.bundle.js"></script>
+	<!-- <script>
+        cookies(); // Виклик функції cookies
+    </script> -->
 </body>
 
 </html>
