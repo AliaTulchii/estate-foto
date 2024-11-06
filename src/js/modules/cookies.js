@@ -36,13 +36,56 @@
 
 // export default cookies;
 
+// function showCookieBanner() {
+//     document.getElementById("cookieBanner").style.display = "block";
+// }
+
+// // Функція для приховування банера
+// function closeCookieBanner() {
+//     document.getElementById("cookieBanner").style.display = "none";
+// }
+
+// // Функція для прийняття cookies
+// function acceptCookies() {
+//     localStorage.setItem('cookiesAccepted', 'true');
+//     closeCookieBanner();
+// }
+
+// // Функція для відмови від cookies
+// function rejectCookies() {
+//     localStorage.setItem('cookiesAccepted', 'false');
+//     closeCookieBanner();
+// }
+
+// // Основна функція, яка перевіряє згоду користувача
+// function cookies() {
+//     const cookiesAccepted = localStorage.getItem('cookiesAccepted');
+//     if (!cookiesAccepted) {
+//         showCookieBanner();
+//     }
+// }
+
+// // Додаємо функції до глобального контексту для використання в HTML
+// window.acceptCookies = acceptCookies;
+// window.rejectCookies = rejectCookies;
+// window.closeCookieBanner = closeCookieBanner;
+
+// export default cookies;
+
+
+// Функція для показу банера з cookies
+// Функція для показу банера
 function showCookieBanner() {
-    document.getElementById("cookieBanner").style.display = "block";
+    const banner = document.getElementById("cookieBanner");
+    banner.classList.add("visible"); // Додаємо клас видимості
+    banner.classList.remove("hidden");
 }
 
 // Функція для приховування банера
 function closeCookieBanner() {
-    document.getElementById("cookieBanner").style.display = "none";
+    const banner = document.getElementById("cookieBanner");
+    banner.classList.add("hidden"); // Додаємо клас для приховування
+    banner.classList.remove("visible");
 }
 
 // Функція для прийняття cookies
@@ -57,12 +100,14 @@ function rejectCookies() {
     closeCookieBanner();
 }
 
-// Основна функція, яка перевіряє згоду користувача
+// Основна функція для показу банера з затримкою
 function cookies() {
-    const cookiesAccepted = localStorage.getItem('cookiesAccepted');
-    if (!cookiesAccepted) {
-        showCookieBanner();
-    }
+    // const cookiesAccepted = localStorage.getItem('cookiesAccepted');
+    
+    // // Показуємо банер через 5 секунд, якщо згоду ще не було надано
+    // if (!cookiesAccepted) {
+        setTimeout(showCookieBanner, 4000); // 5000 мс = 5 секунд
+    // }
 }
 
 // Додаємо функції до глобального контексту для використання в HTML
