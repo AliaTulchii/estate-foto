@@ -44,6 +44,14 @@
     // transform: translateX(0%);
     opacity: 1; /* Показує іконку при наведенні */
     transform: translateX(0); /* Вирівнює іконку */
+    background-color: var(--accent);
+        color: var(--border-color);
+
+    @media screen and (max-width:768px){
+        display: none;
+        background-color: var(--border-color);
+        color: var(--accent);
+    }
 
 }
 

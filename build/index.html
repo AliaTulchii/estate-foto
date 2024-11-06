@@ -10,6 +10,15 @@
 		<link rel="icon" type="image/x-icon" href="./img/logo/logo.png" />
 		<link rel="apple-touch-icon" sizes="180x180" href="./img/favicons/logo.png" />
 	</head>
+	<script async src="https://www.googletagmanager.com/gtag/js?id=G-9QB40339F4"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag() {
+			dataLayer.push(arguments);
+		}
+		gtag("js", new Date());
+		gtag("config", "G-9QB40339F4");
+	</script>
 
 	<body>
 		<header class="header " id="home">
@@ -38,11 +47,13 @@
 					</nav>
 				</div>
 				<div class="mobile-nav__wrapper">
-					<picture>
-						<source srcset="./img/logo/logo.webp 1x, ./img/logo/logo@2x.webp 2x" type="image/webp" />
-						<source srcset="./img/logo/logo.png 1x, ./img/logo/logo@2x.png 2x" type="image/png" />
-						<img src="./img/logo/logo.png" alt="logo" />
-					</picture>
+					<a href="#colorSection"
+						><picture>
+							<source srcset="./img/logo/logo.webp 1x, ./img/logo/logo@2x.webp 2x" type="image/webp" />
+							<source srcset="./img/logo/logo.png 1x, ./img/logo/logo@2x.png 2x" type="image/png" />
+							<img src="./img/logo/logo.png" alt="logo" /> </picture
+					></a>
+
 					<div class="mobile-nav__rightside">
 						<a href="tel:+48664502750" class="mobilenav__tel">+48 664 502 750</a>
 						<div class="mobilenav-btn">

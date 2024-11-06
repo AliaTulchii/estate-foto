@@ -38,12 +38,17 @@
     position: relative;
     width: 100%;
     height: 100%;
-    display: flex;
+    // display: flex;
+    padding-top: 290px;
     align-items: center;
     justify-content: center;
     text-align: center;
     background-image: linear-gradient(rgba(0, 0, 0, 0.208), rgba(0, 0, 0, 0.018),);
     z-index: 2;
+
+    @media screen and (max-width:768px){
+        padding-top: 248px;
+    }
 }
 
 
