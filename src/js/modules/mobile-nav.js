@@ -1,5 +1,5 @@
 function mobileNav() {
-	// Mobile nav button
+
 	const navBtn = document.querySelector('.mobilenav-btn');
 	const nav = document.querySelector('.mobile-nav');
 	const navLinks = document.querySelectorAll('.mobile-nav__list a');
@@ -7,12 +7,10 @@ function mobileNav() {
 	const iconCamera = document.querySelector('.icon-camera');
 	const iconClose = document.querySelector('.icon-close');
 	const backdrop = document.querySelector('.mobile-nav__backdrop');
-	// const menuIcon = document.querySelector('.mobilenav-icon');
 
 	navBtn.onclick = function () {
 		nav.classList.toggle('mobile-nav--open');
 		backdrop.classList.toggle('mobile-nav__backdrop--active');
-		// menuIcon.classList.toggle('mobilenav-icon--active');
 		document.body.classList.toggle('no-scroll');
 
 		if (nav.classList.contains('mobile-nav--open')) {

@@ -7,18 +7,12 @@ function reliseScroll() {
     const images = document.querySelectorAll(".relise__img");
 
     images.forEach((img, index) => {
-        // Встановлюємо z-index для парних елементів
         if (index % 2 === 0) {
             img.style.zIndex = 2;
         }
+        const randomY = (Math.random() - 1) * 100; 
 
-    
-        // Рандомний зсув для осей X та Y
-        // const randomX = (Math.random() - 0.5) * 20; // зсув вліво/вправо
-        const randomY = (Math.random() - 1) * 100; // зсув вгору/вниз
-
-        gsap.to(img, {
-            // x: randomX, 
+        gsap.to(img, { 
             y: randomY,
             duration: 2,
             ease: "power1.out",
@@ -26,7 +20,7 @@ function reliseScroll() {
                 trigger: img,
                 start: "top 80%",   
                 end: "bottom 20%",
-                scrub: 2, // плавне пересування разом із прокруткою
+                scrub: 2, 
                 toggleActions: "restart none none reverse",
             }
         });

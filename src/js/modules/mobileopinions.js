@@ -5,13 +5,12 @@ function mobileOpninions(){
         const observer = new IntersectionObserver((entries) => {
             entries.forEach((entry) => {
                 if (entry.isIntersecting) {
-                    // Overlap each card over the previous one by translating upwards
                     card.style.transform = `translateY(-${index * 80}%)`;
-                    card.style.zIndex = cards.length - index; // Ensures stacking order
+                    card.style.zIndex = cards.length - index;
                 }
             });
         }, {
-            threshold: 0.1, // Start animation when 10% of the card enters the viewport
+            threshold: 0.1, 
         });
     
         observer.observe(card);

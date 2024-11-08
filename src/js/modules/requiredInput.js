@@ -4,10 +4,10 @@ function requiredInput() {
     inputs.forEach(input => {
         input.addEventListener('input', () => {
             if (input.value.trim() !== '') {
-                console.log("Додається клас filled"); // Лог для перевірки
+                console.log("Додається клас filled"); 
                 input.classList.add('filled');
             } else {
-                console.log("Видаляється клас filled"); // Лог для перевірки
+                console.log("Видаляється клас filled"); 
                 input.classList.remove('filled');
             }
         });

@@ -21,9 +21,6 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
-
-        
-    // flex-wrap: wrap;
     }
 }
 .swiper-slide {
@@ -50,8 +47,8 @@
     background-color: var(--page-bg);
     border: solid 1px var(--title-color);
     border-radius: 10px;
-    transform: rotate(-15deg); /* Початковий нахил */
-    opacity: 0; /* Спочатку приховано */
+    transform: rotate(-15deg);
+    opacity: 0;
     transition: transform 0.1s ease, opacity 0.1s ease;
 
     

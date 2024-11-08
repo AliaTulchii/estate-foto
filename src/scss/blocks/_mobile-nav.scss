@@ -19,15 +19,14 @@
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.5); /* напівпрозорий чорний фон */
-    backdrop-filter: blur(10px); /* рівень розмиття */
+    background-color: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(10px);
     opacity: 0;
     visibility: hidden;
     transition: opacity 0.3s ease;
-    z-index: 98; /* нижче рівня меню */
+    z-index: 98;
 }
 
-/* Активний стан для розмиття */
 .mobile-nav__backdrop--active {
     opacity: 1;
     visibility: visible;
@@ -40,7 +39,6 @@
 }
 
 .mobilenav__tel{
-	// height: 44px;
 	padding: 10px 16px;
 	border: solid 1px var(--border-color);
 	border-radius: 20px;
@@ -54,12 +52,12 @@
 }
 
 .mobilenav-btn--active .mobilenav-text {
-	background-color: var(--border-color); /* Змінюємо фон на чорний */
-	color: var(--accent); /* Змінюємо текст на білий */
+	background-color: var(--border-color); 
+	color: var(--accent); 
 }
 
 .mobilenav-btn--active .mobilenav-icon {
-	background-color: black; /* Іконка теж стає чорного фону */
+	background-color: black; 
 }
 
 .mobilenav-text{
@@ -103,19 +101,15 @@
 
 .mobile-nav {
 	position: fixed;
-	// top: 76px;
 	top: -100%;
 	width: 100%;
-	// height: 100%;
     z-index: 99;
 	padding: 0 15px;
 
 	display: flex;
     flex-direction: column;
     align-items: center;
-	justify-content: center;
-    // background: linear-gradient(209deg, #4287b3 -17.38%, #133f6b 78.4%), #276195;
-	
+	justify-content: center;	
 	transition: all 0.2s ease-in;
     
 	@media screen and (min-width:920px){

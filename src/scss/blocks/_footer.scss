@@ -1,19 +1,6 @@
 .footer {
 	background-color: transparent;
 	padding: 0 0 24px 0;
-	
-
-	
-
-	// a {
-	// 	// color: var(--link-color);
-	// 	color: #fff;
-	// 	text-decoration: underline;
-	// }
-
-	// @media (max-width: 1200px) {
-	// 	font-size: 26px;
-	// }
 }
 
 .footer__container{
@@ -35,7 +22,6 @@
 
 	@media screen and (max-width: 768px) {
 		flex-direction: column;
-		// row-gap: 32px;
 	}
 }
 
@@ -55,7 +41,6 @@
 
 	@media screen and (max-width: 768px) {
 		flex-direction: column;
-		// row-gap: 16px;
 		column-gap: 0;
 	}
 }

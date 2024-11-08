@@ -56,30 +56,25 @@ function reliseMiniSlider() {
 
     const miniList = document.querySelector(".relise__list--mini");
 
-    // Main ScrollTrigger to pin .relise__list--mini
     ScrollTrigger.create({
         trigger: ".relise__container",
         start: "top top",
-        end: "bottom bottom", // Set end to bottom of the #relise section
+        end: "bottom bottom", 
         pin: ".relise__list--mini",
         pinSpacing: false,
     });
 
-    // ScrollTrigger to hide .relise__list--mini when it reaches the end of #relise
     ScrollTrigger.create({
         trigger: ".relise__container",
-        start: "bottom bottom", // Trigger at the exact end of #relise
+        start: "bottom bottom", 
         onEnter: () => {
-            // Hide the miniList when it reaches the end of #relise
             gsap.to(miniList, { opacity: 0, duration: 0.3, ease: "power1.out" });
         },
         onLeaveBack: () => {
-            // Show the miniList again when scrolling back up
             gsap.to(miniList, { opacity: 1, duration: 0.3, ease: "power1.out" });
         }
     });
 
-    // IntersectionObserver for highlighting the active mini thumbnail based on visible image
     const images = document.querySelectorAll(".relise__img");
     const miniImages = document.querySelectorAll(".relise__img-mini");
 

@@ -8,18 +8,17 @@ function contactAnimation() {
 
     ScrollTrigger.create({
         trigger: "#contact",
-        start: "top center", // Start the animation when the top of #contact is in the center of the viewport
-        end: "bottom top", // End the animation when #contact leaves the viewport
-        onEnter: () => animateToColor(), // Fade in new image on enter
-        onLeaveBack: () => resetToSketch(), // Fade back to sketch on leave back
-        toggleActions: "play none none reverse" // Controls play and reverse actions
+        start: "top center", 
+        end: "bottom top", 
+        onEnter: () => animateToColor(), 
+        onLeaveBack: () => resetToSketch(), 
+        toggleActions: "play none none reverse" 
     });
 
     function animateToColor() {
         const newBackground = document.createElement("div");
         newBackground.classList.add("new-background");
 
-        // Set up the new background style
         newBackground.style.position = "absolute";
         newBackground.style.top = "0";
         newBackground.style.left = "0";
@@ -30,11 +29,9 @@ function contactAnimation() {
         newBackground.style.backgroundPosition = "center";
         newBackground.style.opacity = "0";
         newBackground.style.transition = "opacity 2s ease-in-out";
-        
-        // Append the new background to contactImg
+
         contactImg.appendChild(newBackground);
 
-        // Trigger the fade-in effect
         setTimeout(() => {
             newBackground.style.opacity = "1";
         }, 50);
@@ -44,10 +41,10 @@ function contactAnimation() {
         const newBackground = contactImg.querySelector(".new-background");
 
         if (newBackground) {
-            newBackground.style.opacity = "0"; // Fade out the new background
+            newBackground.style.opacity = "0";
             setTimeout(() => {
-                newBackground.remove(); // Remove element after fade out completes
-            }, 2000); // Match this with the fade-out duration
+                newBackground.remove(); 
+            }, 2000); 
         }
     }
 }

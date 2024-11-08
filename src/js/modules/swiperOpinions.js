@@ -5,7 +5,6 @@ import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 
-// Імпорт GSAP і ScrollTrigger
 import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 
@@ -13,7 +12,7 @@ function scroll() {
     
 gsap.registerPlugin(ScrollTrigger);
 
-// Ініціалізація Swiper
+
 const swiper = new Swiper('.swiper-container', {
     modules: [Navigation, Pagination],
     slidesPerView: 3,
@@ -23,10 +22,8 @@ const swiper = new Swiper('.swiper-container', {
         el: '.swiper-pagination',
         clickable: true,
     },
-    // Інші налаштування за потреби
 });
 
-// Анімація карток при прокрутці
 gsap.utils.toArray('.card').forEach((card) => {
     gsap.fromTo(
         card,

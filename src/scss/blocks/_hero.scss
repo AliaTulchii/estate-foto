@@ -12,7 +12,6 @@
     
     background-size: cover;
     background-position: center;
-    // filter: grayscale(100%);
     transition: background-image 2s ease-in-out;
     z-index: 0;
     
@@ -23,14 +22,14 @@
 
 .hero .new-background {
     position: absolute;
-    top: 100%; /* Виходить з нижньої частини */
-    left: 100%; /* Виходить з правої частини */
+    top: 100%; 
+    left: 100%;
     width: 100%;
     height: 100%;
-    background-image:url('../../img/hero/photo.jpg'); /* Друге зображення */
+    background-image:url('../../img/hero/photo.jpg'); 
     background-size: cover;
     background-position: center;
-    opacity: 0; /* Початкова непрозорість */
+    opacity: 0; 
     transition: opacity 1s ease-in-out, top 2s ease-in-out, left 2s ease-in-out; /* Додаємо анімацію для top і left */
 }
 
@@ -38,7 +37,6 @@
     position: relative;
     width: 100%;
     height: 100%;
-    // display: flex;
     padding-top: 290px;
     align-items: center;
     justify-content: center;
@@ -62,11 +60,7 @@
     height: 100%;
     border-radius: 15px;
     z-index: 4;
-
-    
 }
-
-
 
 .hero.animated {
     background-image: linear-gradient(rgba(36, 36, 36, 0.4), rgba(36, 36, 38, 0.4)),  url('../../img/hero/photo.jpg'); /* Кольорове фото, як фон */

@@ -14,11 +14,10 @@ function enableAnalytics() {
     };
 }
 
-// Показ банера cookie
 function showCookieBanner() {
     const banner = document.getElementById("cookieBanner");
     if (banner) {
-        banner.classList.add("visible"); // Додаємо клас видимості
+        banner.classList.add("visible"); 
         banner.classList.remove("hidden");
         console.log("Cookie banner shown.");
     } else {
@@ -26,7 +25,6 @@ function showCookieBanner() {
     }
 }
 
-// Функція для приховування банера
 function closeCookieBanner() {
     const banner = document.getElementById("cookieBanner");
     if (banner) {
@@ -36,7 +34,7 @@ function closeCookieBanner() {
     }
 }
 
-// Функція для прийняття cookies
+
 function acceptCookies() {
     localStorage.setItem('cookiesAccepted', 'true');
     closeCookieBanner();
@@ -44,14 +42,12 @@ function acceptCookies() {
     console.log("Cookies accepted.");
 }
 
-// Функція для відмови від cookies
 function rejectCookies() {
     localStorage.setItem('cookiesAccepted', 'false');
     closeCookieBanner();
     console.log("Cookies rejected.");
 }
 
-// Основна функція для показу банера з затримкою
 function cookies() {
     const cookiesAccepted = localStorage.getItem('cookiesAccepted');
 
@@ -63,12 +59,10 @@ function cookies() {
     }
 }
 
-// Додаємо функції до глобального контексту для використання в HTML
 window.acceptCookies = acceptCookies;
 window.rejectCookies = rejectCookies;
 window.closeCookieBanner = closeCookieBanner;
 
-// Запускаємо основну функцію cookies при завантаженні сторінки
 document.addEventListener("DOMContentLoaded", cookies);
 
 export default cookies;

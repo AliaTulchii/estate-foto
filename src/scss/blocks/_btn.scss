@@ -33,17 +33,15 @@
     padding: 7px 8px;
     background-color: var(--accent);
     border-radius: 50%;
-    position: absolute; /* Залишається всередині кнопки */
-    // left: calc(50% - 5px); /* Вирівнює іконку справа, враховуючи відстань */
-    opacity: 0; /* Приховує іконку за замовчуванням */
-    transform: translateX(-10px); /* Вирівнює вправо для анімації */
-    transition: opacity 0.3s ease, transform 0.5s ease-in-out; /* Анімація */
+    position: absolute;
+    opacity: 0;
+    transform: translateX(-10px); 
+    transition: opacity 0.3s ease, transform 0.5s ease-in-out; 
 }
 
 .btn__container:hover .btn__icon{
-    // transform: translateX(0%);
-    opacity: 1; /* Показує іконку при наведенні */
-    transform: translateX(0); /* Вирівнює іконку */
+    opacity: 1; 
+    transform: translateX(0);
     background-color: var(--accent);
         color: var(--border-color);
 
@@ -58,7 +56,6 @@
 .cardbtn__container,
 .opinionsbtn__container{
     width: 270px;
-    // padding: 12px 20px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -80,7 +77,6 @@
 .cardbtn__container-yellow,
 .opinionsbtn__container-yellow{
     width: 270px;
-    // padding: 12px 20px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -121,35 +117,22 @@
         font-weight: 500;
     font-size: 12px;
     }
-
-    // &--yellow{
-    //     color: var(--accent);
-    // }
 }
 
 .cardbtn__icon{
 position: relative;
     background-color: transparent;
     border-radius: 50%;
-    position: absolute; /* Залишається всередині кнопки */
-    // left: calc(50% - 5px); /* Вирівнює іконку справа, враховуючи відстань */
-    opacity: 0; /* Приховує іконку за замовчуванням */
-    transform: translateX(105px); /* Вирівнює вправо для анімації */
-    transition: opacity 0.3s ease, transform 0.5s ease-in-out; /* Анімація */
+    position: absolute; 
+    opacity: 0;
+    transform: translateX(105px); 
+    transition: opacity 0.3s ease, transform 0.5s ease-in-out; 
 }
 
 
 
 .cardbtn__container:hover .cardbtn__icon,
 .cardbtn__container-yellow:hover .cardbtn__icon    {
-    opacity: 1; /* Показує іконку при наведенні */
-    transform: translateX(115px); /* Вирівнює іконку */
-
+    opacity: 1;
+    transform: translateX(115px); 
 }
-
-// .opinionsbtn__container:hover .opinionsbtn__icon,
-// .opinionsbtn__container-yellow:hover .opinionsbtn__icon    {
-//     opacity: 1; /* Показує іконку при наведенні */
-//     transform: translateX(115px); /* Вирівнює іконку */
-
-// }

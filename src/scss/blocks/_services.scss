@@ -43,18 +43,12 @@
     padding: 56px 0;
 }
 
-// .services__corners{
-//     margin-bottom: 56px;
-// }
 
 .services__list{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-
-    
-
 }
 
 .services__item{
@@ -105,13 +99,7 @@
             flex-direction: row-reverse;
         margin-left: 50px;
         }
-
-        
     }
-
-    
-
-
 }
 
 .services__text{
@@ -120,8 +108,6 @@
     font-weight: 400;
     font-size: 20px;
     line-height: 1.4;
-
-    // text-align: center;
     
     @media screen and (max-width: 920px){
 		width: 325px;
@@ -140,11 +126,6 @@
     }
 }
 
-// @media not all and (min-resolution: 192dpi) {
-//     .services__img {
-//         content: url("../../img/services/lens1.png"); /* Зображення для Safari */
-//     }
-// }
 
 @keyframes spin {
     from {
