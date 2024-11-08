@@ -30,6 +30,8 @@
     height: 510px;
     padding: 1px;
 
+    
+
     @media screen and (max-width:768px){
         width: 360px;
         height: 415px;
@@ -53,23 +55,27 @@
     background-repeat: no-repeat;
     background-size: contain;
     z-index: 0;
-
-    
 }
 
 .pricecard__wrapper{
+    width: 99.6%;
     height: 100%;
     position: relative;
-    padding: 53px 30px;
+    padding: 53px 25px;
+    border-radius: 10px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     z-index: 10;
 
+    &--yellow{
+        background-color: var(--accent);
+    }
+
    
 
     &:hover{
-        width: 100%;
+        width: 99.7%;
         border-radius: 10px;
         background-color: var(--accent);
         transition:  background-color 0.5s ease-in-out;
@@ -77,6 +83,7 @@
 
     @media screen and (max-width: 768px){
         padding: 24px 16px;
+        width: 97%;
 
         &:hover{
             width: 348px;
