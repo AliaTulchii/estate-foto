@@ -116,7 +116,7 @@
 	margin: 0 0 32px 0;
 }
 
-.card__title, .opini{
+.card__title{
 	font-family: var(--font-titles);
 	font-weight: 700;
 	font-size: 20px;
@@ -124,9 +124,6 @@
 	color: var(--text-color);
 
 
-	@media screen and (max-width: 768px){
-		font-size: 16px;
-	}
 }
 
 .privacy__title {

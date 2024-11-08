@@ -130,32 +130,12 @@
 
 
 
-// .opinions__card.stacked {
-//     opacity: 1;
-//     transform: translateY(0);
-// }
-
-// .opinions__mobilecontainer .opinions__card:nth-child(1) {
-//     z-index: 3;
-// }
-
-// .opinions__mobilecontainer .opinions__card:nth-child(2) {
-//     z-index: 2;
-//     transform: translateY(-20%) scale(0.9);
-// }
-
-// .opinions__mobilecontainer .opinions__card:nth-child(3) {
-//     z-index: 1;
-//     transform: translateY(-40%) scale(0.8);
-// }
-
-
 .opinions__text{
     margin-bottom: 12px;
     font-family: var(--font-main);
-    font-size: 12px;
+    font-size: 15px;
     font-weight: 400;
-    line-height: 1.38;
+    line-height: 1.25;
 }
 
 
