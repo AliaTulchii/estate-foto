@@ -1,5 +1,9 @@
 .opinions{
-    margin: 78px 0 56px 0;
+    margin: 78px 0 96px 0;
+
+    @media screen and (max-width:768px){
+        margin: 0 0 48px 0;
+        }
 }
 
 .opinions__container{
