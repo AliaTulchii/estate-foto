@@ -18,15 +18,29 @@ function reliseMiniSlider() {
         trigger: ".relise__container",
         start: "bottom bottom", 
         onEnter: () => {
-            gsap.to(miniList, { opacity: 0, duration: 1, ease: "power1.out" });
+            gsap.to(miniList, { opacity: 0, duration: 1, ease: "power4.inOut" });
         },
         onLeaveBack: () => {
-            gsap.to(miniList, { opacity: 1, duration: 1, ease: "power1.out" });
+            gsap.to(miniList, { opacity: 1, duration: 1, ease: "power4.inOut" });
         }
     });
 
     const images = document.querySelectorAll(".relise__img");
     const miniImages = document.querySelectorAll(".relise__img-mini");
+
+    function scrollToImage(imageId) {
+        const targetImage = document.querySelector(`#${imageId}`);
+        if (targetImage) {
+            gsap.to(window, {
+                duration: 6,  
+                scrollTo: {
+                    y: targetImage,
+                    offsetY: 10, 
+                },
+                ease: "power4.inOut"
+            });
+        }
+    }
 
     const observer = new IntersectionObserver((entries) => {
         entries.forEach(entry => {

@@ -14,13 +14,13 @@ function reliseScroll() {
 
         gsap.to(img, { 
             y: randomY,
-            duration: 5,
-            ease: "power1.inOut",
+            duration: 6,
+            ease: "power4.inOut",
             scrollTrigger: {
                 trigger: img,
                 start: "top 90%",   
                 end: "bottom 10%",
-                scrub: 3, 
+                scrub: 5, 
                 toggleActions: "restart none none reverse",
             }
         });
