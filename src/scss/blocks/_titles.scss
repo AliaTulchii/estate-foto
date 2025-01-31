@@ -102,6 +102,8 @@
 		font-size: 32px;
 		line-height: 1.27;
 	}
+
+	
 		
 	@media screen and (min-width: 769px) and (max-width: 1199px){
 		width: 768px;
@@ -109,6 +111,13 @@
 		line-height: 1.28;
 	}
 }
+
+.price__title {
+	margin: 0 0 16px 0;
+
+	@media screen and (max-width: 768px){
+		margin: 0 auto 16px;
+	}}
 
 .opinions__title, .title {
 	margin: 0 0 32px 0;
